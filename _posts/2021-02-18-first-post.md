@@ -6,10 +6,9 @@ categories:
   - Blog
 tags:
   - Blog
-last_modified_at: 2019-04-13T08:06:00-05:00
 ---
 
-지식 정리 겸 포트폴리오를 만들고자 github blog를 시작했다. Markdown 문서 기반(다루기 쉽다)이고 로컬에서 웹호스팅을 할 때 따라오는 불편함 (24시간 컴퓨터 켜야하고, 에러 모니터링 등)이 없어 매우 유용하다. Github blog를 시작하는 좋은 가이드 글이 많아 나도 몇 개를 참고했지만 **window + 노베이스**인 사람을 위한 글은 없는 것 같아 써본다. 설명하기 전 git이 설치되어 있고 github 계정이 있다고 가정하겠다. 가장 먼저 할 것은 Ruby와 Jekyll을 설치하는 것이다.
+지식 정리 겸 포트폴리오를 만들고자 github blog를 시작했다. Markdown 문서 기반(다루기 쉽다)이고 로컬에서 웹호스팅을 할 때 따라오는 불편함 (24시간 컴퓨터 켜야하고, 에러 모니터링 등)이 없어 매우 유용하다. Github blog를 시작하는 좋은 가이드 글이 많아 나도 몇 개를 참고했지만 **window + 노베이스**인 사람을 위한 글은 없는 것 같아 써본다. 또 통계를 공부하다보니 자연스레 개발자 분들의 글을 많이 접하게 되었는데 이걸 왜 하는지 알려주는 글을 극히 드물다. 그만큼 꼬리를 무는 정보가 많고 다 적기에는 비효율적이기 때문이다. 그래도 난 적어도 왜 하는지, 단순한 단어의 나열으로라도 스스로 납득하고 싶어 직접 글을 작성해본다. 설명하기 전 git이 설치되어 있고 github 계정이 있다고 가정하겠다. 가장 먼저 할 것은 Ruby와 Jekyll을 설치하는 것이다.
 
 ## 1. Ruby
 
@@ -112,6 +111,19 @@ $ git push -u origin master
 
 두번째 줄의 remove origin은 우리가 minimal-mistakes를 clone 시켜 가져왔기 때문에 기존의 remote origin을 제거하는 역할이다. 마지막에 push를 했으니 minimal-mistakes theme가 내 [username].github.io에 업로드된 것을 확인할 수 있다. 이제 로컬 주소가 아닌 <https://username.github.io>를 사용해서 내 블로그에 접속할 수 있다. 
 
+
+
+## 6. Future Works
+
+지금까지 window 환경에서 github pages를 구축하는 방법에 대해 알아봤다. 그러면 이제 github pages에 어떤 파일을 (Markdown) 어떻게 작성해서 (VSCode) 올릴 것인지 살펴보겠다.
+
+
+
+## 7. References
+
+<https://devinlife.com/howto/>
+<https://m.blog.naver.com/hsy2569/221865301644>
+<https://zoomkoding.github.io/gitblog/2019/08/15/git-blog-1.html>
 
 
 
