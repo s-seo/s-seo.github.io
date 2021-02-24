@@ -1,10 +1,8 @@
 ---
 title: "Projects"
-permalink: /projects/
+permalink: /projects/bigcon
 layout: single
 ---
-
-<https://s-seo.github.io/projects/bigcon>
 
 # 1. 2020 BIGCONTEST
 ***
@@ -18,10 +16,3 @@ layout: single
 ##### (3) Model & Algorithms
 ##### (4) Report
 ##### (5) Review
-
-
-
-
-
-
-
