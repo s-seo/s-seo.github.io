@@ -20,7 +20,7 @@ title                    : "Data Science & Analysis"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungmin Seo"
-description              : "금융권 종사를 희망하는 데이터 애널리스트"
+description              : "유명한 데이터 분석가가 되자!"
 url                      : "https://s-seo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Seungmin Seo"
   avatar           : "/assets/images/pic2.jpg"
-  bio              : "금융 데이터 분석가"
+  bio              : "데이터 사이언스로서 커리어를 쌓고 있습니다. 베이지안 통계, 통계물리학, 네트워크분석 등에 관심이 있습니다."
   location         : "South Korea"
   email            :
   links:
