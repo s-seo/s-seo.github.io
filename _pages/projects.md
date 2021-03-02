@@ -21,15 +21,18 @@ layout: single
 | 문제                                   | 해결 방안                               |
 |:-------------------------------------------:|:----------------------------------------:|
 | 2019년도의 데이터로 2020년 6월의 매출을 예측해야 한다는 time gap 문제                                         | Recursive 변수 반영                                      |
-| COVID-19의 영향력이 크지만 관련 데이터가 주어지지 않았다는 한계 | 네이버 쇼핑 데이터 등을 웹크롤링, COVID 19 Index |
+| COVID-19의 영향력이 크지만 관련 데이터가 주어지지 않았다는 한계 | 네이버 쇼핑 데이터 웹크롤링, COVID 19 Index |
 | COVID-19을 반영해 어찌어찌 예측했다 하더라도 제대로 반영했는지?                                         | Counterfactual Analysis                                      |
 | 편성표 최적화 (최적화 개념 정의와 구체적인 방법)                                         | Hungarian Algorithm                                      |
 
 
+#### 역할
+* 팀리더로서 프로젝트 총괄
+* 웹크롤링을 사용한 데이터 수집 (네이버 쇼핑)
+* Counterfactual analysis를 사용한 인과관계 분석
+* 데이터 시각화 (R)
+* 최적화 알고리즘 문제 정의,구축 및 결과 해석([헝가리안 알고리즘](https://en.wikipedia.org/wiki/Hungarian_algorithm) 응용)
 
-#### 결과
-* LightGBM을 응용한 단일 예측 모델을 사용해 50 대 MAPE를 얻음
-* 2020년 6월의 편성표를 최적화하여 편성표 관련 인사이트와 최대 2배 가량의 매출 증대 효과를 얻음
 
 More : [**2020 빅콘테스트 ㅁㅁㅁㅉ팀**](https://s-seo.github.io/projects/bigcon)
 
@@ -50,13 +53,14 @@ More : [**2020 빅콘테스트 ㅁㅁㅁㅉ팀**](https://s-seo.github.io/projec
 |개인정보보호법에 의해 사용 가능한 의료 데이터가 절대적으로 부족해서 충분한 성능의 모델이 없음 | GAN을 사용해 fake image를 생성하고 이를 다시 model fitting에 사용|
 
 
-### 결과
-* 이미지 분류 모델(CNN)의 예측 정확도가 향상됨
-* 컴퓨터 프로세서의 한계로 높은 해상도의 이미지를 얻기 어려움
+### 역할
+* 문제 정의
+* 데이터 전처리
+* GAN, CNN 모델링 및 결과 해석
 
 ![](https://s-seo.github.io/assets/images/project_gan_1.PNG) 
 
-More : [**GAN project github link**](https://s-seo.github.io/projects/GAN)
+More : [**GAN project**](https://s-seo.github.io/projects/GAN)
 
 ***
 
@@ -72,11 +76,14 @@ More : [**GAN project github link**](https://s-seo.github.io/projects/GAN)
 |:-----------------------------------------------------:|:------------------------------------------------------:|
 | 제품의 수요 예측 정확도를 높여 불필요한 재고를 줄이고, 재고 생산 비용, 관리 비용을 감축시킬 수 있음 |  RDBMS 및 ER diagram 구축  <br> spatial 변수 등 다양한 변수를 생성 <br> 이를 반영한 다변량 시계열 모델(dynamic regression) 사용 |
 
-### 결과
-* 제품별 향후 3개월 매출 수량을 예측하였으며 예측 오차(MAPE)를 163%p 감소시킴
-* 현업에서 제품 생산 계획 시 참고 자료료서 모델 예측값을 사용 
+### 역할
+* 팀리더로서 프로젝트 총괄
+* 데이터 통합 (정합성 검증), 전처리, feature engineering (Geocoding, product categorization)
+* Dynamic regression in Forecast Pro 모델링 및 결과 도출 (MAPE 10%p 감소)
+* 보고서, 매뉴얼 작성 
 
-More : [**Demand forecasting project link**](https://s-seo.github.io/projects/monami)
+
+More : [**Demand forecasting project**](https://s-seo.github.io/projects/monami)
 
 
 ***
@@ -100,14 +107,14 @@ More : [**Demand forecasting project link**](https://s-seo.github.io/projects/mo
 ![](https://s-seo.github.io/assets/images/project_yonsei_2.PNG) 
 
 
-### 결과 및 의의
-* 사업 계획을 수립할 때 참고할 수 있는 읍,면,동 단위까지 세분화된 시각화 자료
-* Random forest를 사용한 매우 높은 예측 정확도(AUC = 0.995)의 반품 예측 모델을 구축함
-* 장려상 수상, 모나미 인턴 기회
+### 역할
+* 팀리더로서 프로젝트 총괄 
+* 데이터 전처리, feature engineering(한국행정구역 변수, 품목명 카테고리화 등), EDA, 시각화(모나미 로드)
+* 반품 예측 모델링(Random forest, AUC = 0.995)
 
 More : [**2018 Yonsei project**](https://s-seo.github.io/projects/yonsei)
 
-당시에는 따뜻함이라는 모나미의 브랜드 이미지에 꽂혀서 이런 이미지를 더 많은 소비자와 거래처에게 전달하겠다는 목적 아래 위와 같은 분석을 했다고 어필했는데 지금 생각하면 좀 어이없다...
+(당시에는 따뜻함이라는 모나미의 브랜드 이미지에 꽂혀서 이런 이미지를 더 많은 소비자와 거래처에게 전달하겠다는 목적 아래 위와 같은 분석을 했다고 어필했는데 지금 생각하면 좀 부담스럽다...)
 
 
 
