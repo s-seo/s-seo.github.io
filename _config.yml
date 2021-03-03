@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science & Analysis"
+title                    : "Data Science & Analysis Knowledge Review"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungmin Seo"
@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Seungmin Seo"
+  name             : "서승민"
   avatar           : "/assets/images/pic2.jpg"
-  bio              : "데이터 사이언스로서 커리어를 쌓고 있습니다. 베이지안 통계, 통계물리학, 네트워크분석 등에 관심이 있습니다."
+  bio              : "Data analyst로서 커리어를 쌓고 있습니다. 베이지안 통계, 통계물리학, 네트워크분석 등에 관심이 있습니다."
   location         : "South Korea"
   email            :
   links:
