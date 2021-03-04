@@ -1,18 +1,29 @@
 ---
-title: "Projects"
+title: "서울의대 GAN project"
 permalink: /projects/GAN
 layout: single
 ---
 
-# 1. 서울의대 GAN project
 ***
 
-### * Background
+# 1. 분석 배경
+왜 이 프로젝트를 시작했는지.
 
-### * Summary
+# 2. 주제 (문제 정의)
+이 프로젝트에서 무슨 문제를 해결하려고 했는지
 
-##### (1) Data Collection
-##### (2) Data Preprocessing
-##### (3) Model & Algorithms
-##### (4) Report
-##### (5) Review
+
+# 3. 분석 과정
+그 문제를 어떻게 해결했는지.
+
+구체적으로,
+데이터는 어떻게?
+전처리는?
+GAN 말고 또 뭐? 알고리즘 소개와 같이...
+코드 예시
+
+# 4. 결과 및 의의
+결과로 얻은 것들
+궁극적으로는 딥러닝을 시도해봤는 것에 의의.
+
+

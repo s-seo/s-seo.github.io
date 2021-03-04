@@ -20,11 +20,11 @@ title                    : "Data Science & Analysis Knowledge Review"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungmin Seo"
-description              : "유명한 데이터 분석가가 되자!"
+description              : "평생공부"
 url                      : "https://s-seo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # "/assets/images/KakaoTalk_20210218_185118599.jpg"
+teaser                   : "/assets/images/logo_S2.jpg"
 logo                     : "/assets/images/logo_S2.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -76,7 +76,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/KakaoTalk_20210218_185118599.jpg"
+og_image                 : "/assets/images/logo_S2.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

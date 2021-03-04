@@ -35,6 +35,8 @@ layout: single
 
 
 ### More : [**2020 빅콘테스트 ㅁㅁㅁㅉ팀**](https://s-seo.github.io/projects/bigcon)
+### Github link : <https://github.com/Seungmi122/bigcon2020_sales_forecasting>
+
 
 ***
 

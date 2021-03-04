@@ -1,11 +1,12 @@
 ---
-title: "Projects"
+title: "모나미 수요예측 프로젝트"
 permalink: /projects/monami
 layout: single
 ---
 
-# 1. 모나미 수요예측 프로젝트 
 ***
+
+# 1. 문제 정의
 
 ### * Background
 
