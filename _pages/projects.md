@@ -34,8 +34,7 @@ layout: single
 * 최적화 알고리즘 문제 정의,구축 및 결과 해석([헝가리안 알고리즘](https://en.wikipedia.org/wiki/Hungarian_algorithm) 응용)
 
 
-### More : [**2020 빅콘테스트 ㅁㅁㅁㅉ팀**](https://s-seo.github.io/projects/bigcon)
-### Github link : <https://github.com/Seungmi122/bigcon2020_sales_forecasting>
+##### More : [**2020 빅콘테스트 ㅁㅁㅁㅉ팀**](https://s-seo.github.io/projects/bigcon)
 
 
 ***
@@ -48,7 +47,7 @@ layout: single
 
 
 ### 문제 정의 및 해결
-임상빅데이터연구실(CBL)에서 연구원으로 근무하며 파악한 국내 의료 통계의 가장 큰 한계점은 통계 분석, 모델이 교육 및 연구에 잘 사용되지 않는다는 것. 이와 관련한 여러 요인 중 개인정보보호법에 대해 관련 문제를 정의하고 딥러닝을 이용해 해결하고자함
+임상빅데이터연구실(CBL)에서 연구원으로 근무하며 파악한 국내 의료 통계의 가장 큰 한계점은 통계 분석, 모델이 교육 및 연구에 잘 사용되지 않는다는 것. 이와 관련한 여러 요인 중 개인정보보호법에 대해 관련 문제를 정의하고 GAN을 사용해 해결하고자함
 
 | 문제                                   | 해결 방안                               |
 |:-------------------------------------------:|:----------------------------------------:|
@@ -62,7 +61,8 @@ layout: single
 
 ![](https://s-seo.github.io/assets/images/project_gan_1.PNG) 
 
-### More : [**GAN project**](https://s-seo.github.io/projects/GAN)
+##### More : [**GAN project**](https://s-seo.github.io/projects/GAN)
+
 
 ***
 
@@ -116,7 +116,7 @@ layout: single
 
 ### More : [**2018 Yonsei project**](https://s-seo.github.io/projects/yonsei)
 
-(당시에는 따뜻함이라는 모나미의 브랜드 이미지에 꽂혀서 이런 이미지를 더 많은 소비자와 거래처에게 전달하겠다는 목적 아래 위와 같은 분석을 했다고 어필했는데 지금 생각하면 좀 부담스럽다...)
+(당시에는 따뜻함이라는 모나미의 브랜드 이미지에 꽂혀서 이런 이미지를 더 많은 소비자와 거래처에게 전달하겠다는 목적 아래 위와 같은 분석을 했다고 어필했는데 지금 생각하면 살짝 부담스럽다...)
 
 
 

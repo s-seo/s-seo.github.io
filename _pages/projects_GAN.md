@@ -26,4 +26,4 @@ GAN 말고 또 뭐? 알고리즘 소개와 같이...
 결과로 얻은 것들
 궁극적으로는 딥러닝을 시도해봤는 것에 의의.
 
-
+### Github link : <https://github.com/s-seo/SNU-GAN-project>
