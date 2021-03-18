@@ -61,7 +61,7 @@ layout: single
 
 ![](https://s-seo.github.io/assets/images/project_gan_1.PNG) 
 
-##### More : [**GAN project**](https://s-seo.github.io/projects/GAN)
+##### More : [**GAN project(keep updating)**](https://s-seo.github.io/projects/GAN)
 
 
 ***
@@ -85,7 +85,7 @@ layout: single
 * 보고서, 매뉴얼 작성 
 
 
-### More : [**Demand forecasting project**](https://s-seo.github.io/projects/monami)
+### More : [**Demand forecasting project(keep updating)**](https://s-seo.github.io/projects/monami)
 
 
 ***
@@ -114,7 +114,7 @@ layout: single
 * 데이터 전처리, feature engineering(한국행정구역 변수, 품목명 카테고리화 등), EDA, 시각화(모나미 로드)
 * 반품 예측 모델링(Random forest, AUC = 0.995)
 
-### More : [**2018 Yonsei project**](https://s-seo.github.io/projects/yonsei)
+### More : [**2018 Yonsei project(keep updating)**](https://s-seo.github.io/projects/yonsei)
 
 (당시에는 따뜻함이라는 모나미의 브랜드 이미지에 꽂혀서 이런 이미지를 더 많은 소비자와 거래처에게 전달하겠다는 목적 아래 위와 같은 분석을 했다고 어필했는데 지금 생각하면 살짝 부담스럽다...)
 
