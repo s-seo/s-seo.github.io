@@ -95,8 +95,8 @@ analytics:
 # Site Author
 author:
   name             : "서승민"
-  avatar           : "/assets/images/pic2.jpg"
-  bio              : "Data analyst로서 커리어를 쌓고 있습니다. 베이지안 통계, 통계물리학, 네트워크분석 등에 관심이 있습니다."
+  avatar           : "/assets/images/pic3.jpg"
+  bio              : "Junior Data Scientist, 베이지안 통계, 통계물리학, 네트워크분석 등에 관심이 있습니다."
   location         : "South Korea"
   email            :
   links:

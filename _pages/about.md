@@ -10,6 +10,13 @@ layout: single
 
 ***
 ## Work History
+
+#### Data Analyst at Samsung Economic Research Institue
+
+- Took part in several HR analysis (People Analytics) projects about whole Samsung group
+- Had a key part in web crawling, text analysis, descriptive statistical analysis using R, Python
+- Handled Tableau for some basic visulizations
+
 #### Laboratory Research Assistant at Seoul National University Hospital (2019-02 - 2019-08)
 - Participated in the MBRC 2019 Creative Autonomous Task Project and solved the chronic problem of the lack of the available medical data by creating high‑quality fake data.
 
