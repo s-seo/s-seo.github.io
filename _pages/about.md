@@ -6,6 +6,7 @@ layout: single
 
 > More on [**LinkedIn**](https://www.linkedin.com/in/seungmin-seo-049b69195/)
 
+{% include video id="VYOjWnS4cMY" provider="youtube" %}
 
 ***
 ## Work History
