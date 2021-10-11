@@ -1,0 +1,37 @@
+I"§	<p>In this post we will have a look at some syntax highlighting abilities.</p>
+
+<p>Here you can see a very simple C++ code snippet:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="nc">type</span><span class="p">&gt;</span>
+<span class="k">class</span> <span class="nc">Vector</span><span class="p">{</span>
+
+    <span class="nl">private:</span>
+        <span class="n">type</span> <span class="o">*</span><span class="n">data</span><span class="p">;</span>
+        <span class="kt">size_t</span> <span class="n">used</span><span class="p">;</span>
+        <span class="kt">size_t</span> <span class="n">capacity</span><span class="p">;</span>
+
+    <span class="nl">public:</span>
+        <span class="n">Vector</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">elemCount</span><span class="p">){</span>
+
+            <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="n">type</span><span class="p">[</span><span class="n">elemCount</span><span class="p">];</span>
+            <span class="n">capacity</span> <span class="o">=</span> <span class="n">elemCount</span><span class="p">;</span>
+            <span class="n">used</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="o">~</span><span class="n">Vector</span><span class="p">(){</span>
+            <span class="k">delete</span><span class="p">[]</span> <span class="n">data</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>The simplex support all the languages supported by Jekyll. For example, bash commands can be highlighted as well:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle <span class="nb">exec </span>jekyll serve <span class="nt">--force-polling</span></code></pre></figure>
+
+<p>You can also create your own highlighting palletes! See <a href="https://github.com/andreondra/jekyll-theme-simplex">simplex readme</a>.</p>
+
+<p>The simplex also includes some simple buttons, which can be used for example at the end of the tutorial:</p>
+<div class="sx-button">
+  <a href="https://www.example.com/" class="sx-button__content red">
+    <img src="/assets/img/icons/down_arrow.svg" />Download the source
+  </a>
+</div>
+:ET

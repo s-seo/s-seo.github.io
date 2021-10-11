@@ -15,24 +15,26 @@
     property="og:title"
     content="
         
-            Welcome to Jekyll!
+            Photos and pictures
         
     " 
 />
 
-<meta property="og:url" content="http://localhost:4000//jekyll/update/2021/10/11/welcome-to-jekyll.html" />
+    <meta property="og:description" content="Various picture examples." />
+
+<meta property="og:url" content="http://localhost:4000//design/2021/06/16/pictures-example.html" />
 
     <meta property="og:type" content="article" />
 
 
 
-    <meta property="fb:app_id" content="" />
+    <meta property="fb:app_id" content="example" />
 
 
 
 <title>
     
-        Welcome to Jekyll!
+        Photos and pictures
     
 </title>
 </head>
@@ -157,44 +159,89 @@
     <article class="post">
 
     <div class="post__title">
-        <h1 class="post__title__text">Welcome to Jekyll!</h1>
+        <h1 class="post__title__text">Photos and pictures</h1>
     </div>
     <div class="post__meta"> 
         <div class="post__meta__category">
             
-                <p class="post__meta__category__title">No category</p>
+                <p class="post__meta__category__title" style="background: var(--c-themeHueOrange)">Design</p>
             
         </div>
         <p class="post__meta__divider">·</p>
         <div class="post__meta__date">
-            October 11, 2021
+            June 16, 2021
         </div>
+        
+            
+            <p class="post__meta__divider">·</p>
+            <div class="post__meta__author">
+                <p>by </p>
+                <img class="post__meta__author__photo" src="http://localhost:4000/assets/img/authors/jekyll.png"/>
+                <p>Dr. Jekyll</p>
+            </div>
         
     </div>
 
     
+        <div class="post__navigator">
+            <div
+                class="post__navigator__buttons"
+                
+            >
+                
+                    <a href="/programming/cpp/2021/06/16/syntax-example.html">
+                        <img  class="arrow-left" src="http://localhost:4000/assets/img/icons/arrow_left.svg"/>
+                        Previous
+                    </a>
+                
+                
+            </div>
+        </div>
+    
 
     <div class="post__content">
-        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+        <p>The simplex supports not only embedding pictures but also includes a lightbox plugin. Read the post and check out various examples.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="dogs">Dogs</h2>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p>Try to click on the following picture:</p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p><a href="/assets/img/posts/doggo1.jpg" data-lity="">
+  <img src="/assets/img/posts/doggo1_thumb.jpg" />
+</a></p>
 
-<p>와 나 이거 한글도 되겠지? 한글 이쁘게 나오려나??????? 제발 이쁘게 나와라 제발제발</p>
+<p>You see? A big doggo appeared.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<hr />
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>Images can be centered:</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p><a href="/assets/img/posts/doggo2.jpg" data-lity="" class="sx-center">
+  <img src="/assets/img/posts/doggo2_thumb.jpg" />
+</a></p>
 
+<hr />
+
+<p>You don’t have to use the lightbox feature. In that case, simply use markdown image tag:</p>
+
+<p><img src="/assets/img/posts/doggo1_thumb.jpg" alt="A picure without lightbox" /></p>
+
+<hr />
+
+<p>There also can be a simple description under the picture:</p>
+
+<div class="sx-center">
+    <div class="sx-picture">
+    <a href="/assets/img/posts/doggo2.jpg" data-lity="">
+        <img src="/assets/img/posts/doggo2_thumb.jpg" />
+    </a>
+    <span class="sx-subtitle">My picture description.</span>
+    </div>
+</div>
+
+<h2 id="attributions">Attributions</h2>
+<p>The first dog picture by <a href="https://unsplash.com/photos/U3aF7hgUSrk">Pauline Loroy</a>.
+The second dog picture by: <a href="https://unsplash.com/photos/2l0CWTpcChI">Marliese Streefland</a>.</p>
 
     </div>
 </article>
