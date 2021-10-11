@@ -54,7 +54,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-logo_img: /assets/img/icons/golasblog_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
+logo_img: /assets/img/icons/simplex_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
 copyright: © Golasowski 2020 #Your copyright.
 
 collections:
