@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2021-10-11 22:01:26 +0900
+date:   2021-10-11 23:31:26 +0900
 categories: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -11,8 +11,6 @@ Jekyll requires blog post files to be named according to the following format:
 `YEAR-MONTH-DAY-title.MARKUP`
 
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-와 나 이거 한글도 되겠지? 한글 이쁘게 나오려나??????? 제발 이쁘게 나와라 제발제발
 
 Jekyll also offers powerful support for code snippets:
 
