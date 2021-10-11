@@ -1,1 +1,0 @@
-# Simplex theme 너무 어렵다

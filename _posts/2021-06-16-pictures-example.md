@@ -5,6 +5,10 @@ title:  "Photos and pictures"
 date:   2021-06-16 10:05:42 +0200
 ---
 
+
+국내 데이터 분석 공모전 중 
+
+
 The simplex supports not only embedding pictures but also includes a lightbox plugin. Read the post and check out various examples.
 
 ## Dogs
