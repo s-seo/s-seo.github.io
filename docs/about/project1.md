@@ -6,17 +6,6 @@ has_children: true
 nav_order: 97
 ---
 
----
-title: "Projects Summary"
-permalink: /projects/
-layout: single
-header:
-  teaser: /assets/images/KakaoTalk_20210218_185118599.jpg
-
----
-
-***
-
 # 1. 2020 빅콘테스트
 
 
