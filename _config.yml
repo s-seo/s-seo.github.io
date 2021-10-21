@@ -134,7 +134,7 @@ gh_edit_view_mode: # "tree" # "tree" or "edit" if you want the user to jump into
 
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+color_scheme: light
 
 
 plugins:
