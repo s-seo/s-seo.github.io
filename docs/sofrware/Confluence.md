@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Confluence"
-parent: Engineering
+parent: Software
 nav_order: 97
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Tableau"
-parent: Engineering
+parent: Software
 nav_order: 97
 ---
 
