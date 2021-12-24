@@ -1,34 +1,42 @@
 ---
-title: About Duet
-subtitle: Duet is a beautiful Jekyll portfolio theme designed to showcase your work in style. Perfect for designers, artists, photographers and developers to use for their portfolio website.
-description: Duet is a beautiful Jekyll portfolio theme.
+title: Seungmin Seo
+subtitle: Junior Data Analyst and Data Engineer
+description: # Duet is a beautiful Jekyll portfolio theme.
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
 ![](/images/demo/demo-landscape.jpg)
 
-## Features
+***
 
-We've packed Duet full of powerful features to help showcase your work:
+## Work History
 
-* Beautiful, minimal design
-* Two-column masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+- Data Analyst at Samsung Economic Research Institue
+    - Took part in several HR analysis (People Analytics) projects about whole Samsung group
+    - Had a key part in web crawling, text analysis, descriptive statistical analysis using R, Python
+    - Handled Tableau for some basic visulizations
 
-## Get Duet
+- Laboratory Research Assistant at Seoul National University Hospital (2019-02 - 2019-08)
+    - Participated in the MBRC 2019 Creative Autonomous Task Project and solved the chronic problem of the lack of the available medical data by creating high‑quality fake data.
 
-Duet is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
+- Intern at MONAMI (2018-12 -2019-02)
+    - Created and presented a time series model of demand forecasting. Achieved 168%p better prediction accuracy vs historical performance.
 
-<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+***
+
+## Education
+
+- Master of Science: Applied Statistics at Yonsei University - Seoul, Korea (2019-09 - 2021-08)
+- Bachelor of Science: Applied Statistics at Yonsei University - Seoul, Korea (2012-03 - 2019-08)
+
+
+***
+
+## Awards
+
+- Won the Grand Prize of 2020 BIGCONTEST Champion League → [Link](https://s-seo.github.io/projects/bigcon)
+- Won the 3rd place of 2018 Yonsei University Big Data Analysis Contest → [Link](https://s-seo.github.io/projects/yonsei)
+
+***
+
+More on [**LinkedIn**](https://www.linkedin.com/in/seungmin-seo-049b69195/)
