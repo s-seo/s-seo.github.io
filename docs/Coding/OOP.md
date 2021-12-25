@@ -187,7 +187,7 @@ smile()
 
 ### - 객체지향 프로그래밍
 
-![](https://s-seo.github.io/assets/images/post_oop_1.png) 
+![](https://s-seo.github.io/assets/images/post_oop_1.PNG) 
 출처: <https://nesoy.github.io/articles/2018-05/Object-Oriented-Programming>
 
 
