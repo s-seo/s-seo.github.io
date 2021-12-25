@@ -18,7 +18,7 @@ DAG를 작성해야 하는 업무가 있었는데, 이 개념을 모르고 쓴�
 
 ***
 
-![](https://s-seo.github.io/assets/images/post_airflow_2.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_2.png) 
 > 출처: <https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html>
 
 Airbnb에서 개발한 open-source workflow management platform for data engineering pipeplines, 즉, workflow scheduling, monitoring tool 이다. 현재는 Apache의 Top-Level Apache Software Foundation project로 자리잡았다. 오픈 소스라 딱히 인수할 것도 없고 그냥 개발한지 2년 후인 16년에 Apache Incubator project가 된 것 같다. <https://en.wikipedia.org/wiki/Apache_Airflow> 깃헙 레포도 있다. <https://github.com/apache/airflow> 난 Airflow는 batch 관리 시스템 정도로만 알고 있었는데, workflow를 관리하는 도구라...그럼 batch와 workflow 간 차이가 있나? 아니 애초에 workflow란 뭘까? 간단히 생각하면 batch는 타켓이 데이터고, workflow는 분석, 모델링 등 전반을 아우르는 process라고 생각되는데 이건 <https://s-seo.github.io/docs/engineering/Batch/>에서 다루도록 하자. Airflow는 파이썬으로 만들어졌고 (깃헙 보면 알 수 있다), pip으로 설치 가능하고, 파이썬 스크립트를 사용해 워크플로우를 정의한다. 실무에서도 사용하고 있기 때문에 직접 코드를 짜서 실습까지 해보자. Airflow는 아래와 같은 특징이 있다.
@@ -32,10 +32,10 @@ Airbnb에서 개발한 open-source workflow management platform for data enginee
 
 Airflow 동작 원리는 다음과 같다.
 
-![](https://s-seo.github.io/assets/images/post_airflow_1.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_1.png) 
 > 출처: <https://airflow.apache.org/docs/apache-airflow/stable/concepts.html>
 
-![](https://s-seo.github.io/assets/images/post_airflow_3.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_3.png) 
 > 출처: <https://airflow.apache.org/docs/apache-airflow/stable/concepts.html>
 
 위는 Apache Airflow 공식 사이트에서 따온 것이고, 아래는 같은 개념인데 좀 더 직관적인 그림이다. 상단에 있는 airflow.cfg는 Airflow의 Configuration 파일로 깃헙 페이지하면서 수없이 건드렸던 그 config 파일과 같은 역할을 한다. 하단에 나와있듯이 Airflow는 Directed Acyclic Graph (DAG) 형식의 workflow를 지원한다. DAG는 network theory 개념이다. workflow라고 명시한 분도 있는데 내 생각에 둘은 엄연히 다른 개념인 것 같다. DAG로 표현, 관리된 workflow라고 말하는게 맞지 않을까?
@@ -117,15 +117,15 @@ with models.DAG('my_dag', start_date=datetime(2016, 1, 1)) as dag:
 
 DAG를 정의하는 방법은 <https://cloud.google.com/composer/docs/how-to/using/writing-dags>, <https://getchan.github.io/data/airflow_2/>에 보다 자세히 나와있다. 이후 `airflow scheduler`를 실행한 뒤 웹서버에 접속하면 아래와 같은 UI가 뜬다.
 
-![](https://s-seo.github.io/assets/images/post_airflow_4.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_4.png) 
 > 출처: <https://airflow.apache.org/docs/apache-airflow/stable/concepts.html>
 
 이게 잘 작동되는건지 확인하려면 해당 task를 클릭한 뒤 `Graph View`를 눌러 worflow가 잘 만들었는지 확인하고 `Trigger DAG`를 눌러 workflow를 실행할 수 있다. 정상적으로 실행되면 박스의 윤곽선이 초록색으로 바뀐다. 아래는 workflow 예시다
 
-![](https://s-seo.github.io/assets/images/post_airflow_5.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_5.png) 
 > 출처: <https://airflow.apache.org/docs/apache-airflow/stable/concepts.html>
 
-![](https://s-seo.github.io/assets/images/post_airflow_6.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_6.png) 
 > 출처: <https://blog.si-analytics.ai/59>
 
 아래는 일반적인 detection + classification의 workflow다. 
@@ -145,7 +145,7 @@ DAG를 정의하는 방법은 <https://cloud.google.com/composer/docs/how-to/usi
 
 이 외에도 다양한 featuers가 있다. MWAA의 architecture는 아래와 같은데 어렵다.
 
-![](https://s-seo.github.io/assets/images/post_airflow_7.PNG) 
+![](https://s-seo.github.io/assets/images/post_airflow_7.png) 
 > 출처: <https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html>
 
 VPC는 또 뭐냐...정말 engineering은 꼬리에 꼬리가 물리는 수준을 넘어서 꼬리 하나에 꼬리 백 개가 물리는 지식의 늪이다. MWAA는 추가로 작성하자. 
