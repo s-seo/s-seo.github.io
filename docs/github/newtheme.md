@@ -16,8 +16,7 @@ nav_order: 3
 - layout를 확장할 수 있어야함
 - 한국어, latex, code 문법 깔끔한지
 
-위주로 고르려고 한다. 그리고 한 1~2년 정도 깃헙 페이지 운영해보니 트래픽 거의 없는 것 같다. 면접관들만 볼텐데 타이틀도 그냥 `대충 아는 것은 내 자존심이 허락못해서 만든 페이지` 이런걸로 할거다. 이렇게라도 낙을 찾는 내 자신이 기특하다.
-
+위주로 고르려고 한다. 그리고 한 1~2년 정도 깃헙 페이지 운영해보니 트래픽 거의 없는 것 같다. 면접관들만 볼텐데 타이틀도 그냥 `대충 아는 것은 내 자존심이 허락못해서 만든 페이지` 이런걸로 할거다. 이렇게라도 낙을 찾는 내 자신이 기특하다. 
 
 # New Theme
 
@@ -29,5 +28,12 @@ nav_order: 3
 - gem
 
 
-jekyll theme는 대부분 git repo에 원본 소스가 저장되어 있어서 해당 repo를 folk해서 그대로 가져와 사용해도 되고, 아니면 default jekyll theme에서 직접 gemfile 수정해서 원하는 테마를 다운로드 받는 방법도 있다. 
+jekyll theme는 대부분 git repo에 원본 소스가 저장되어 있어서 해당 repo를 folk해서 그대로 가져와 사용해도 되고, 아니면 default jekyll theme에서 직접 gemfile 수정해서 원하는 테마를 다운로드 받는 방법도 있다. 모든 jekyll theme는 github에 원본 소스가 있다. jekyll theme는 github pages를 만드는 역할이니 github repo가 있는게 당연하다.
+
+
+
+
+# Duet to just-the-docs
+
+이후 내 블로그는 [Duet](https://duet.jekyllthemes.io/)을 적용해보다가($49 주고 구매했었는데..) 다시 just-the-docs로 돌아왔다. 이유는 카테고리 기능이 없어서 카테고리 항목을 직접 만들려다가 html이나 scss 등을 공부해서 어느정도 읽을 수 있는 정도가 되고보니 just-the-docs에서 layout을 원하는대로 수정해 사용할 수 있게 되었다. Duet은 menu가 header에 있어 내가 원하는 방식(커서를 가져다대면 아래에 하위항목이 뜨는)을 적용한다면 글이 가져리게 되는 약간의 불편함+조잡함이 생긴다. 
 
