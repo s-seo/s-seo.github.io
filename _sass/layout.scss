@@ -20,7 +20,7 @@
 
   @include mq(lg) {
     // width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
-    width: 5%;
+    width: 10%;
     min-width: $nav-width;
   }
 }
@@ -117,12 +117,15 @@
   @include container;
   flex-grow: 1;
   display: flex;
+  width: 100%;
   height: 100%;
   align-items: center;
   padding-top: $sp-3;
   padding-bottom: $sp-3;
-  color: $body-heading-color;
-  @include fs-6;
+  // color: $body-heading-color;
+  font-weight: 600;
+
+  @include fs-5;
 
   @include mq(md) {
     padding-top: $sp-2;

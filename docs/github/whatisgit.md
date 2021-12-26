@@ -1,16 +1,17 @@
 ---
 layout: default
-title:  "What is Git?"
-parent: Github
+title:  "Git이란?"
+parent: Git
 nav_order: 3
 ---
 
 컴퓨터 포맷을 한 김에 github을 처음 시작하는 방법도 같이 정리해보려고 한다. 이전 포스팅에서는 git, github이 사용가능하다는 전제 하에 블로그를 시작하는 방법을 정리했다. Github는 버전 관리 시스템 웹호스팅을 맡은 일종의 저장소이자 서비스이며, git은 저장소에 내 resource를 버전 별로 저장, 관리해주는 시스템이다.
 
+
 ## Git이란
 
 ![](https://s-seo.github.io/assets/images/post_git_1.png) 
-출처: <https://velog.io/@leobit/Git-workflow>
+> 출처: <https://velog.io/@leobit/Git-workflow>
 
 git은 형상 관리 도구(configuration management tool) 중 하나다. 다른 말로 버전 관리 시스템이라고 한다. 소프트웨어 개발에 필요한 소스코드를 효과적으로 관리할 수 있는 무료 공개 소프트웨어다. Open source contribution이 이런 것과 연관된 건가..? 여튼 기존에는 서브버전(SVN)이라는 틀이 있는데 이보다 여러 장점을 갖춘 git으로 많이 넘어온 상태다. 그럼 왜 git이 좋은지?
 
@@ -29,11 +30,11 @@ git은 형상 관리 도구(configuration management tool) 중 하나다. 다른
 * `Head`: 현재 작업 중인 브랜치를 의미함
 * `Merge`: 다른 브랜치의 내용을 현재 브랜치로 가져와 합치는 작업
 
+
+
 ## Git 설치
 
-[git 설치 사이트](https://git-scm.com)에 들어가 git을 다운받는다. 거의 다 `Next`를 눌러 넘기되, terminal emulator 선택화면에서는 **Use Window's default console window**를 선택한다. 
-
-git을 처음 설치하면 사용할 이름, 이메일을 등록해야 한다. cmd를 실행해서 아래 명령어를 입력하자
+[git 설치 사이트](https://git-scm.com)에 들어가 git을 다운받는다. 거의 다 `Next`를 눌러 넘기되, terminal emulator 선택화면에서는 **Use Window's default console window**를 선택한다. git을 처음 설치하면 사용할 이름, 이메일을 등록해야 한다. cmd를 실행해서 아래 명령어를 입력하자
 
 ```
 $ git config --global user.name 사용할이름
@@ -66,7 +67,7 @@ $ git config --global user.email 사용할이메일
 
 `$ git reset HEAD^^`: 최신 커밋을 취소한다. 커밋이 취소되고 unstaged 되었다는 내용이 출력된다. 여기에 `$ git restore`까지 해주면 파일을 원래 상태로 돌릴 수도 있다.
 
-더 많은 git 명령어는 [git 명령어](https://reddb.tistory.com/147?category=948284)를 참고하면 된다.
+더 많은 git 명령어는 [git 명령어](https://reddb.tistory.com/147?category=948284)를 참고하자.
 
 
 

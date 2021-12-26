@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Github Page on Window"
-parent: Github
+title:  "Github Pages 시작"
+parent: Git
 nav_order: 1
 ---
 
@@ -14,9 +14,8 @@ Ruby는 객체 지향 프로그래밍 언어의 한 종류다. 가독성이 좋�
 <https://rubyinstaller.org/downloads/>에 들어가 
 
 ![](https://s-seo.github.io/assets/images/post1_1.PNG) 
-위에 보이는 파일 하나를 다운 받으면 된다.
 
-이 때 되도록 버전이 2.2 이상 2.7 이하의 중간 버전을 다운받는게 좋다. 최신 버전은 호환 문제가 발생할 수 있기 때문이다. 
+위에 보이는 파일 하나를 다운 받으면 된다. 이 때 되도록 버전이 2.2 이상 2.7 이하의 중간 버전을 다운받는게 좋다. 최신 버전은 호환 문제가 발생할 수 있기 때문이다. 
 exe 파일은 실행해서 쭉 설치하면 되고 다 설치하면 cmd를 켜서 아래와 같은 결과가 나오는지 확인한다.
 
 ```ruby

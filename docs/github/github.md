@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Github
-nav_order: 96
+title: Git
+nav_order: 4
 has_children: true
-permalink: docs/github
+permalink: docs/git
 ---

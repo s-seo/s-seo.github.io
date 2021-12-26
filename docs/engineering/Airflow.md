@@ -3,6 +3,7 @@ layout: default
 title:  "Airflow"
 parent: Engineering
 nav_order: 97
+last_modified_date: "Dec 1 2021 at 1:30 pm"
 ---
 
 DAG를 작성해야 하는 업무가 있었는데, 이 개념을 모르고 쓴다는건 너무 자존심 상해서 아예 Airflow라는 뿌리부터 공부해보려고 한다. Airflow를 다루기 앞서 workflow라는 개념을 알아야하는데, 간단히 정의하자면 아래와 같다. 

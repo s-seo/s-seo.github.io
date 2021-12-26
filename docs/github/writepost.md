@@ -1,17 +1,16 @@
 ---
 layout: default
-title:  "How to write posts"
-parent: Github
+title:  "포스트 작성"
+parent: Git
 nav_order: 2
 ---
-
 
 이번 글에서는 *블로그 포스트 작성 원리와 어떻게 포스트를 작성할 것인지*에 대해 다룬다. 원리는 알아야 응용을 할 수 있기 때문에 작동 방식을 간단하게 적는데 생각보다 재밌다.
 
 ## 1. Github pages 원리
 
 ![](https://s-seo.github.io/assets/images/post2_1.PNG) 
-출처 : <https://devinlife.com/howto%20github%20pages/github-blog-intro/>
+> 출처 : <https://devinlife.com/howto%20github%20pages/github-blog-intro/>
 
 Github pages의 대략적인 관계도를 나타낸 것으로, 블로거 A가 Template/Contents에서 작업한 것을 github에 연동시키는 과정 (git push, git pull)이 있고 작업한 것은 웹사이트에서 보여주는 역할을 Jekyll이 담당한다. Local computer와 github pages에 모두 Jekyll이 그려져 있는데, 전자는 우리가 직접 깔았고, 후자는 github에 원래 깔려져 있기 때문이다. Local에서 작업한 것은 나만 볼 수 있고, github에서 작성한 블로거는 여러 방문자들이 볼 수 있다는 것도 확인할 수 있다. 
 
@@ -82,9 +81,7 @@ Markdown 파일을 작성할 때 파일명도 정해진 양식이 있다. *year-
 
 ### - Visual Studio Code
 
-VScode는 마이크로소프트에서 오픈소스로 개발하고 있는 소스 코드 에디터다. 비슷한 이름의 Visual Studio를 똑같이 마이크로소프트에서 개발, 운영하고 있는데 이건 IDE에 가깝고 VScode는 코드 에디터 목적에 충실하다. 
-
-<https://code.visualstudio.com/>에 접속하면 바로 아래와 같은 창이 나오고 운영체제에 맞춰 다운받아 쭉쭉 실행하면 된다. 
+VScode는 마이크로소프트에서 오픈소스로 개발하고 있는 소스 코드 에디터다. 비슷한 이름의 Visual Studio를 똑같이 마이크로소프트에서 개발, 운영하고 있는데 이건 IDE에 가깝고 VScode는 코드 에디터 목적에 충실하다. <https://code.visualstudio.com/>에 접속하면 바로 아래와 같은 창이 나오고 운영체제에 맞춰 다운받아 쭉쭉 실행하면 된다. 
 ![](https://s-seo.github.io/assets/images/post2_2.PNG) 
 
 VSCode를 실행하면 거무튀튀한 창이 뜨고 좌측에 5개 아이콘이 있는데 이를 activity bar라고 한다. 
@@ -127,14 +124,12 @@ $ git push -u origin master
 
 
 
-### Google 검색에 노출
+### - Google 검색에 노출
+
+작성한 글을 다른 사람이 보게 하는 것도 좋은 시도다. `robot.txt`와 `sitemap.xml`을 만들어 구글 search console에 등록하면 되는데, 결과적으로 구글에서 `sitemap.xml`을 인식하지 못해 계속 시도하는 중이다. 검색해보니 just-the-docs 테마를 쓰는 사람 중 나와 같은 문제가 발생한 사람이 있다. <https://jjuhey.github.io/docs/trouble-shooting/sitemap-missing/> 이 분이 해결한 방식대로 sitemal.xml을 다시 제출했으나 여전히 인식하지 못하는 상황이다. 
 
 
 
-
-***
-
-이 글의 목적은 내가 꾸준히 글을 올리기 위함이다. 부족한 부분이 있을 것이고 궁금하다면 좌측의 email로 연락주시길!
 
 
 
