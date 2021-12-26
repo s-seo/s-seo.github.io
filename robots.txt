@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://s-seo.github.io/sitemap.xml
