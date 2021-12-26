@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "2020 빅콘테스트"
-parent: Projects
+parent: Projects_summary
 grand_parent: About
-permalink: /Projects/subproject_4/
+permalink: /Projects_summary/subproject_4/
 nav_order: 96
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "2018 연세 공모전"
-parent: Projects
+parent: Projects_summary
 grand_parent: About
-permalink: /Projects/subproject_1/
+permalink: /Projects_summary/subproject_1/
 nav_order: 99
 ---
 

@@ -4,42 +4,9 @@ title: About
 nav_order: 1
 has_children: true
 permalink: /
+has_toc: false
 ---
 
-> More on [**LinkedIn**](https://www.linkedin.com/in/seungmin-seo-049b69195/)
+![](https://s-seo.github.io/assets/images/KakaoTalk_20211226_134517319.PNG) 
 
-
-## Work History
-
-#### Data Analyst at Samsung Economic Research Institue
-
-- Took part in several HR analysis (People Analytics) projects about whole Samsung group
-- Had a key part in web crawling, text analysis, descriptive statistical analysis using R, Python
-- Handled Tableau for some basic visulizations
-
-#### Laboratory Research Assistant at Seoul National University Hospital (2019-02 - 2019-08)
-
-- Participated in the MBRC 2019 Creative Autonomous Task Project and solved the chronic problem of the lack of the available medical data by creating high‑quality fake data.
-
-#### Intern at MONAMI (2018-12 -2019-02)
-
-- Created and presented a time series model of demand forecasting. Achieved 168%p better prediction accuracy vs historical performance.
-
-***
-
-## Education
-
-#### Master of Science: Applied Statistics at Yonsei University - Seoul, Korea (2019-09 -Current)
-
-#### Bachelor of Science: Applied Statistics at Yonsei University - Seoul, Korea (2012-03 - 2019-08)
-
-
-***
-
-## Awards
-
-* Won the Grand Prize of 2020 BIGCONTEST Champion League → [Link](https://s-seo.github.io/projects/bigcon)
-
-* Won the 3rd place of 2018 Yonsei University Big Data Analysis Contest → [Link](https://s-seo.github.io/projects/yonsei)
-
-***
+통계, 데이터 분석, 엔지니어링 등에 관심이 있습니다. 대학원까지가서 통계를 파다가 실무를 경험하고 싶어 현재 게임 회사의 데이터 분석가로 일하고 있습니다. 언젠가 다시 공부를 할지도, 아니면 제 뜻을 펼칠 수 있는 단체를 설립할지도 몰라요. 글 쓰는 것도 좋아하다보니 깃헙 블로그 관리만한 취미가 없습니다. 스스로 생각과 지식을 정리하고 싶은 마음에 시작했습니다. 누군가 봐주기 시작하면 또 그 매력에 한동안 빠지다가 다시 내면의 세계에 집중할거에요. 개인적인 생각은 브런치에 정리하고 있는데 아직 작가 신청은 못하고 있습니다. 

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "모나미 수요예측 프로젝트"
-parent: Projects
+parent: Projects_summary
 grand_parent: About
-permalink: /Projects/subproject_2/
+permalink: /Projects_summary/subproject_2/
 nav_order: 98
 ---
 

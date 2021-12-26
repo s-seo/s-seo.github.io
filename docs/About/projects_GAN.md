@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "서울의대 GAN project"
-parent: Projects
+parent: Projects_summary
 grand_parent: About
-permalink: /Projects/subproject_3/
+permalink: /Projects_summary/subproject_3/
 nav_order: 97
 ---
 
