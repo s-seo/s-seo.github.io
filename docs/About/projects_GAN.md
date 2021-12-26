@@ -7,6 +7,10 @@ permalink: /Projects_summary/subproject_3/
 nav_order: 97
 ---
 
+***
+
+### Github link : <https://github.com/s-seo/SNU-GAN-project>
+
 # 1. 연구 배경
 - 해외 주요 국가에서는 시각 지능 분야에서 인공지능 (AI, Artificial Intelligence) 기술 개발을 위한 기계학습 데이터 구축 등 인프라를 확보하여 개방함 (Kaggle, Open images dataset V4, ISIC, TCIA, NIH, etc.)
 - 국내 의료 데이터 인공지능기술의 활성화를 위해서는 다양한 패턴의 고품질 이미지 데이터 확보가 중요함. 의료 데이터 고유의 특성을 가진 연구에 유효한 데이터의 확보가 필요하지만, 의료데이터에는 개인정보가 내포되어 있기 때문에 빅데이터 연구 및 활용을 위한 데이터 배포에 어려움이 있음
@@ -24,25 +28,25 @@ nav_order: 97
 
 
 
-# 연구 목표
+# 3. 연구 목표
 - 실제 해당 GAN을 구현하는 연구를 통해, GAN을 통해 만들어진 가짜이미지가 교육/연구용 배포 데이터로 활용 가능성이 있는 지 검토 및 논의함
 - 또한, GAN을 통해 만들어진 가짜 이미지의 성능을 평가하기 위해 실제 이미지 데이터로만 만들어진 CNN 모델에 GAN으로 생성한 이미지를 추가한 CNN모델의 성능이 좋아지는지 판단하여 가짜이미지가 배포용 의료데이터로 활용될 가능성이 있는지 검토함
 
 
 
 
-# 3. 연구 과정
+# 4. 연구 과정
 
-### 3.1 이미지 수집 및 전처리
+### 4.1 이미지 수집 및 전처리
 
-- 색상을 포함한 이미지 중 ISIC에서 취득한 피부이미지를 처리하기로 선택함 
-(1) 처음 GAN 학습은 전처리과정을 거치지 않은 23,905장으로 작업함 (~약 50Gb) 
-(2) 전처리 후 (스티커 최소 · 중복 데이터 제거 후 23,345 장)
+색상을 포함한 이미지 중 ISIC에서 취득한 피부이미지를 처리하기로 선택함 
+- (1) 처음 GAN 학습은 전처리과정을 거치지 않은 23,905장으로 작업함 (~약 50Gb) 
+- (2) 전처리 후 (스티커 최소 · 중복 데이터 제거 후 23,345 장)
 
 ![](https://s-seo.github.io/assets/images/project_gan_2.PNG) 
 
 
-### 3.2 GAN
+### 4.2 GAN
 2014년 Ian J. Goodfellow가 발표한 GAN은 지도학습중심의 딥러닝 패러다임을 비지도 학습으로 바꿈. 이 Network는 ‘생성자(Generator)’와 ‘감별자(Discriminator)’로 불리는 두 모델로 이루어져 있으며, 생성자는 진짜이미지와 가능한 가까운 가짜이미지를 생성하고, 감별자는 진짜이미지와 가짜이미지를 학습하는 방식으로 서로를 대치하며 학습되는 방식임
 
 ##### 분석 세팅
@@ -66,7 +70,7 @@ nav_order: 97
 
 
 
-### 3.3 Deep Convolutional GAN (DCGAN)
+### 4.3 Deep Convolutional GAN (DCGAN)
 GAN의 일반적인 응용 형태 중 하나로, 심층 합성곱 생성적 신경망 (Deep Convolution Generative Adversarial Network, DCGAN)이라고 함. 학습 시 안정성이 떨어지는 기존 GAN의 단점을 보완하여, 대부분의 상황에서 안정적인 학습이 가능한 GAN 의 구조를 찾아낸 것이 DCGAN임. 
 
 ##### 모델 요약
@@ -88,7 +92,7 @@ GAN의 일반적인 응용 형태 중 하나로, 심층 합성곱 생성적 신�
 
 
 
-### 3.4 BigGAN
+### 4.4 BigGAN
 BigGAN은 ICLR 2019에 큰 이슈가 되었던 연구로, Scalability, Robustness, stability의 3가지 측면에서 큰 발전 보여주었음; 기존에 가짜이미지의 해상도가 64X64 ~ 128x128의 한계를 가지고 있었지만, 이 Network를 통해 해상도 증가(128x128 ~ 512x512) 및 향상된 질의 이미지 생성이 가능함을 보여줌 (BigGAN의 연구진은 모델 파라미터의 양을 늘리고, 큰 batch size 및 아키텍처에 변화를 주어 이러한 성과를 얻어냈음)
 
 ##### 연구 세팅
@@ -117,7 +121,7 @@ BigGAN은 ICLR 2019에 큰 이슈가 되었던 연구로, Scalability, Robustnes
 
 
 
-### 3.5 CNN 
+### 4.5 CNN 
 CNN (Convolutional Neural Network)은 GAN의 감별자와 같은 원리이지만, 여기서는 GAN을 통해 생성된 의료 이미지가 추후 의료 영역에서 활용될 수 있고, 의료 이미지 분류를 위한 CNN의 성능을 변화를 주는 지의 여부를 확인하기 위한 수단으로 사용하기 위해 CNN을 적용함
 
 ![](https://s-seo.github.io/assets/images/project_gan_12.PNG) 
@@ -139,7 +143,7 @@ CNN (Convolutional Neural Network)은 GAN의 감별자와 같은 원리이지만
 
 
 
-# 4. 결과 및 의의
+# 5. 결과 및 의의
 
 -	이미지 개수의 한계성이나 연구자의 리소스의 한계로 상위 모델을 사용하기 어려울 경우, 이미지의 전처리 과정이 필수임
 -	실제 훈련하고 싶은 클래스에 대한 이미지의 양이 많을수록 좋은 결과(해당 클래스의 특징을 많이 포함함)의 가짜 이미지를 얻어 낼 수 있음
@@ -163,4 +167,4 @@ CNN (Convolutional Neural Network)은 GAN의 감별자와 같은 원리이지만
 - 가짜 이미지를 생성하는GAN보다 기본이미지의 특징들을 다르게 변화시키는 종류의 GAN 응용하는 기술을 사용하여 학습/연구용 이미지를 생성하는 것이 더 나을 것으로 파악됨
 
 
-### Github link : <https://github.com/s-seo/SNU-GAN-project>
+

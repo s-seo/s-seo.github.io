@@ -7,7 +7,7 @@ permalink: /Projects_summary/subproject_1/
 nav_order: 99
 ---
 
-
+***
 # 1. 2018 연세 빅데이터 분석 경진대회
 ***
 

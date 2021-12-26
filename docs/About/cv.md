@@ -7,30 +7,32 @@ nav_order: 97
 has_toc: false
 ---
 
-
+***
 ## Work History
 
-#### Data Analyst at Samsung Economic Research Institue
+- Data Analyst at KRAFTON (2021-09 ~)
 
-- Took part in several HR analysis (People Analytics) projects about whole Samsung group
+- Data Analyst at Samsung Economic Research Institue (2021-04 ~ 2021-06)
+
+<!-- - Took part in several HR analysis (People Analytics) projects about whole Samsung group
 - Had a key part in web crawling, text analysis, descriptive statistical analysis using R, Python
-- Handled Tableau for some basic visulizations
+- Handled Tableau for some basic visulizations -->
 
-#### Laboratory Research Assistant at Seoul National University Hospital (2019-02 - 2019-08)
+- Laboratory Research Assistant at Seoul National University Hospital (2019-02 ~ 2019-08)
 
-- Participated in the MBRC 2019 Creative Autonomous Task Project and solved the chronic problem of the lack of the available medical data by creating high‑quality fake data.
+<!-- - Participated in the MBRC 2019 Creative Autonomous Task Project and solved the chronic problem of the lack of the available medical data by creating high‑quality fake data. -->
 
-#### Intern at MONAMI (2018-12 -2019-02)
+- Intern at MONAMI (2018-12 ~ 2019-02)
 
-- Created and presented a time series model of demand forecasting. Achieved 168%p better prediction accuracy vs historical performance.
+<!-- - Created and presented a time series model of demand forecasting. Achieved 168%p better prediction accuracy vs historical performance. -->
 
 ***
 
 ## Education
 
-#### Master of Science: Applied Statistics at Yonsei University - Seoul, Korea (2019-09 -Current)
+- Master of Science: Applied Statistics at Yonsei University - Seoul, Korea (2019-09 -Current)
 
-#### Bachelor of Science: Applied Statistics at Yonsei University - Seoul, Korea (2012-03 - 2019-08)
+- Bachelor of Science: Applied Statistics at Yonsei University - Seoul, Korea (2012-03 - 2019-08)
 
 
 ***

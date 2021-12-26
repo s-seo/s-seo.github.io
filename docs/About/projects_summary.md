@@ -4,9 +4,17 @@ title: Projects_summary
 parent: About
 has_children: true
 nav_order: 97
+has_toc: false
 ---
 
-# 1. 2020 빅콘테스트
+***
+# Non-Profit Data Analysis
+
+계획: AWS resource, streaming data, batch, airflow, crawling, ETL, simple modeling, tableau
+
+
+***
+# 2020 빅콘테스트
 
 
 ### 공모전 소개
@@ -44,7 +52,7 @@ nav_order: 97
 ***
 
 
-# 2. 서울의대 GAN 프로젝트
+# 서울의대 GAN 프로젝트
 
 ### 프로젝트 소개
 
@@ -74,7 +82,7 @@ nav_order: 97
 ***
 
 
-# 3. 모나미 수요예측 프로젝트
+# 모나미 수요예측 프로젝트
 
 ### 프로젝트 소개
 
@@ -99,7 +107,7 @@ nav_order: 97
 
 ***
 
-# 4. 2018 연세 빅데이터 분석 경진대회
+# 2018 연세 빅데이터 분석 경진대회
 
 ### 공모전 소개 
 
