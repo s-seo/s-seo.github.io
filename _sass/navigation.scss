@@ -8,7 +8,6 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  width: 100%;
 
   .nav-list-item {
     @include fs-4;
@@ -144,10 +143,8 @@
   @include fs-2;
 
   @include mq(md) {
-    // padding-right: $gutter-spacing;
-    // padding-left: $gutter-spacing;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: $gutter-spacing;
+    padding-left: $gutter-spacing;
     margin-top: $gutter-spacing-sm;
     text-align: start;
 
