@@ -10,4 +10,3 @@ COPY Gemfile just-the-docs.gemspec ./
 RUN gem install bundler -v 2.1.4 && bundle _2.1.4_ install
 
 EXPOSE 4000
-
