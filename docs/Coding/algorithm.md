@@ -2,14 +2,15 @@
 layout: default
 title:  "Data Structure & Algorithm"
 parent: Coding
-nav_order: 97
+# nav_order: 97
 ---
 
-
+***
 *자료구조와 알고리즘을 <https://programmers.co.kr/learn/courses/57>에서 수강 중이다. 본 포스팅은 이 강의에서 배운 것을 정리한 것이다.*
 
 Data structure는 왜 필요할까? 효율성 때문이다. 예를 들어 `max`라는 함수는 리스트의 모든 원소를 탐색해서 최댓값을 도출하기 때문에 리스트 크기가 크면 그만큼 시간도 오래 걸린다. 만약 자료 구조를 알면 이 시간을 단축시킬 수 있다. 세상엔 똑똑한 사람들이 많아 이미 이러한 자료 구조를 많이 개발해놨다. 따라서 우리는 어떤 문제를 어떤 자료 구조로 풀지 판단하는 능력만 갖추면 효율적으로 문제를 해결할 수 있다. 알고리즘은 주어진 문제를 해결하기 위한 자료 구조, 연상 방법의 집합이라고 할 수 있다. 
 
+***
 # 선형 배열 (Linear Array)
 
 프로그래밍에서는
@@ -31,12 +32,15 @@ Data structure는 왜 필요할까? 효율성 때문이다. 예를 들어 `max`�
 sorted(L, key=lambda x:len(x))
 ```
 
+***
 
 # 탐색 알고리즘
 
 * 선형 탐색은 순차적으로 일일히 탐색하기 때문에 O(n)만큼 시간이 소요된다. 
 * 이진 탐색 (binary search)는 비교가 포함되어 시간이 반씩 줄어들기 때문에 O(log n)만큼 시간이 소요된다. 하지만 리스트가 정렬되어 있어야만 가능하기 때문에 정렬이 필요한 경우 항상 효율적이라고 할 수는 없다.
 * `if x in L`: 선형 탐색인 것 명심
+
+***
 
 # 재귀 알고리즘 (recursive algorithm)
 
@@ -56,12 +60,16 @@ def sum(n):
 * 이진 탐색을 재귀적으로 구현하면 함수 인자에 lower, upper를 추가하면 된다.
 
 
+***
+
 # 연결 리스트 (Linked Lists)
 
 * 추상적 자료구조란? (Abstract Data Structures) 
+
 데이터와 일련의 연산 집합을 추상적으로 나타낸 자료 구조를 의미한다. 이 중 하나가 연결 리스트다. 본 강의에선 연결 리스트의 추상적 자료구조를 파이썬의 클래스를 기반으로 이를 구현한다. 
 
 * 기본적인 연결 리스트 (단방향 연결 리스트, singly linked list)
+
 **1. Node가 기본 단위이며 각 노드 내에는 Data와 Link(next)가 있다. Data는 다른 구조가 할당될 수 있다.**
 
 **2. 연결 리스트의 맨 앞을 Head로, 맨 끝 노드를 Tail이라고 하는데 이 두가지를 알아야 한다. Head를 알아야 시작할 수 있고 Tail을 알면 끝에 뭘 붙일 때 좋고, number of nodes도 알면 좋다.**
@@ -428,7 +436,7 @@ def concat(self, L):
 
 양쪽 방향 구조라 링크가 차지하는 메모리는 많아지지만 코드는 훨씬 간단해짐. Head나 Tail을 조정할 필요가 없고, `.getAt()` 메서드를 조정함으로써 맨 마지막 원소를 뽑아내는게 자동적으로 시간이 덜 걸린다.
 
-
+***
 
 # 스택
 
@@ -670,6 +678,7 @@ def solution(expr):
     return val
 ```
 
+***
 
 # 큐 (Queues)
 
@@ -745,7 +754,7 @@ class LinkedListQueue:
 큐가 어디에 활용될 수 있을까? 자료를 생성하는 작업과 그 자료를 이용하는 작업이 비동기적으로 일어나는 경우. 
 
 ![](https://s-seo.github.io/assets/images/post_DSAG_2.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13859>
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13859>
 
 또는 자료를 생성하는 작업이 여러 곳에서 일어나는 경우, 자료를 이용하는 작업이 여러 곳에서 일어나는 경우, 두개 모두 해당되는 경우에 큐를 활용할 수 있다. 또한 자료를 처리하여 새로운 자료를 생성하고, 나중에 그 자료를 또 처리해야 하는 작업의 경우에도 큐를 활용할 수 있다. 이러한 처리를 구현하려면 좀 어렵다. 
 
@@ -844,6 +853,8 @@ class PriorityQueue:
 
 
 
+***
+
 # 트리(Tree)
 
 지금까지는 1차워 자료 구조를 다뤘다면 트리는 2차원 자료 구조를 갖는다. 트리는 데이터 검색, 탐색에 아주 널리 이용됨. 
@@ -887,7 +898,7 @@ class PriorityQueue:
 높이 k인 완전 이진 트리. 레벨 k-2까지는 모든 노드가 2개의 자식을 가진 포화 이진 트리이며 레벨 k-1에서는 왼쪽부터 노드가 순차적으로 채워져 있는 이진 트리인 경우.
 
 ![](https://s-seo.github.io/assets/images/post_DSAG_3.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13861>
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13861>
 
 
 * 이진 트리의 연산 정의
@@ -951,8 +962,8 @@ class BinaryTree:
 * 깊이 우선 순회 (depth first traversal)
 
 - 중위 순회 (in-order traversal): left subtree -> 자기자신 -> right subtree   
-    ![](https://s-seo.github.io/assets/images/post_DSAG_4.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13863>
+![](https://s-seo.github.io/assets/images/post_DSAG_4.PNG) 
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13863>
 
 ```python
 class Node:
@@ -985,8 +996,10 @@ class Node:
         return traversal
 ```
 - 후위 순회 (post-order traversal): 마지막에 나를 방문
-        ![](https://s-seo.github.io/assets/images/post_DSAG_5.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13863>
+
+![](https://s-seo.github.io/assets/images/post_DSAG_5.PNG) 
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13863>
+
 ```python
 class Node:
     def postorder(self):
@@ -1006,7 +1019,7 @@ class Node:
 수준이 낮은 노드를 우선으로 방문하는 방식을 말한다. 같은 수준의 노드 사이에는 부모 노드의 방문 순서에 따라 방문한다. 먼저 방문한 부모를 갖는 자식 노드를 먼저 방문함. 결론적으로 이 순회 방식에선 재귀 알고리즘이 적합하지 않음.
 
 ![](https://s-seo.github.io/assets/images/post_DSAG_6.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13864>
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13864>
 
 - 한 노드를 방문했을 때 나중에 방문할 노드를 순서대로 기억해야함. 그래서 **큐**를 이용해야함
 - root node를 가장 먼저 큐에 넣는다.
@@ -1206,10 +1219,6 @@ class Node:
 
 자식이 둘인 노드의 삭제, 오른쪽 자식에서 시작해서 왼쪽으로 따라가면 삭제하려는 노드보다 한 칸 더 큰 키를 찾는다. 이런 노드를 successor라고 한다. 이것의 부모 노드도 알아야함. 이것의 링크도 조정해야 하기 때문. 나머지 잘 이해못함...
 
-```python
-
-```
-
 
 ```python   
 class BinSearchTree:
@@ -1285,7 +1294,7 @@ class BinSearchTree:
 보다 나은 성능의 이진 탐색 트리: 높이의 균형을 유지함으로써 O(log n)의 탐색 복잡도 보장함. 이렇게 유지하려면 삽입, 삭제 연산이 보다 복잡함. (AVL tree, Red-black tree)
 
 
-
+***
 
 # 힙 (Heap)
 
@@ -1297,7 +1306,7 @@ class BinSearchTree:
 - 느슨한 정렬
 
 ![](https://s-seo.github.io/assets/images/post_DSAG_7.PNG) 
-출처: <https://programmers.co.kr/learn/courses/57/lessons/13867>
+> 출처: <https://programmers.co.kr/learn/courses/57/lessons/13867>
 
 이진 탐색 트리와 비교했을 때
 

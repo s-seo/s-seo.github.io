@@ -2,23 +2,27 @@
 layout: default
 title:  "Structed Query Language"
 parent: Coding
-nav_order: 97
+# nav_order: 97
 ---
 
+***
 
 SQL은 DB를 다루기 위해 매우 필수적인 언어다. 관련 개념과 쿼리를 확실하게 익히는 것이 본 포스팅의 목적이다.
+
+***
 
 # DataBase (DB)
 
 * DB는 뭘까? 어느정도 체계를 갖춘 데이터 집합이라고 볼 수 있다. 논리적으로 연관되어 있고, 데이터 구조를 정규화함으로써 검색, 갱신 등을 효율적으로 관리 할 수 있다. 이렇게 DB를 관리하는 시스템을 DBMS(DataBase Management System)라고 한다. 
 
 ![](https://s-seo.github.io/assets/images/post_sql_1.PNG) 
-출처: <https://db-engines.com/en/ranking>
+> 출처: <https://db-engines.com/en/ranking>
 
 * DataBase는 relational / non-relational로 구분되는데, 전자는 주로 정형화된 데이터로 RDBMS의 R에 해당한다. 후자는 RDBMS의 한계(대용량 데이터 저장 및 처리 비용 등)를 보완하고자 schema-less 구조의 NoSQL 같은 것이 있다.
 
 
 
+***
 
 # Relational DataBase Management System (RDBMS)
 
@@ -27,19 +31,21 @@ SQL은 DB를 다루기 위해 매우 필수적인 언어다. 관련 개념과 �
 * Entity(distinct한 사람이나 사건), Attribute(entity의 특성), Relationship(entities간 관계로 one-to-many, many-to-many, one-to-one)의 3가지로 구성되어 있다.
 
 * 쉽게 생각하면 2차원 테이블의 집합이다. 데이터를 attribute와 attribute value로 나눠 둘 사이 관계를 정의하고, 테이블 형태로 도식화한다. 이 때 primary key, foreign key라는 개념이 있는데, 전자는 테이블의 row를 식별하는 column이며, 후자는 다른 테이블과 병합하여 식별할 수 있는 attribute를 의미한다. 사전적 정의는 다음과 같다.
-  * Primary key: A column (or set of columns) whose values uniquely identify every row in a table
-  * Foreign key: One or more columns that can be used together to identify a single row in another table
+
+    * Primary key: A column (or set of columns) whose values uniquely identify every row in a table
+    * Foreign key: One or more columns that can be used together to identify a single row in another table
 
 * DB의 테이블 구조, 관계 등을 formal language로 나타낸 것을 schema라고 한다. 일종의 데이터베이스 설계도며 보통 아래와 같이 도식화시켜 나타낸다. Schema를 ER diagrams라고도 한다. 그림을 그리는 방식도 여러가지가 있는데 Chen Notation, Crow's Foot Notation, UML Class Diagram Notation 등이 있다.
 
 ![](https://s-seo.github.io/assets/images/post_sql_2.PNG) 
-출처: <https://www.fun-coding.org/mysql_basic1.html>
+> 출처: <https://www.fun-coding.org/mysql_basic1.html>
 
 * RDBMS의 종류: MS SQL Server, MySQL, IBM DB2 Oracle, Apache Open Ofiice Base, Sybase ASE, SQLite, PostgreSQL
 
 * RDBMS에 대조되는 개념으로 transactional DB가 있다. 
 
 
+***
 
 # Structed Query Language
 
@@ -62,10 +68,13 @@ SQL은 DB를 다루기 위해 매우 필수적인 언어다. 관련 개념과 �
 | Delete(또는 Destroy) | 삭제(또는 파괴) | DELETE  |
 
 
+*** 
+
 # SQL query based on SQLite
 
 
 * Create
+
 ```sql
 CREATE TABLE Shoes
 Id    char(10)    PRIMARY KEY,
@@ -76,6 +85,7 @@ Price decimal(8,2)NOT NULL,
 Desc  Varchar(750)NULL
 );
 ```
+
 ```sql
 INSERT INTO Shoes
         (Id, Brand, Type, Color, Price, Desc)
@@ -94,6 +104,7 @@ WHERE shou_type = 'sandals'
 
 
 * Retrieve
+
 ```sql
 SELECT col1, col2
 FROM data;
@@ -111,22 +122,26 @@ FROM data;
 
 
 * Filtering
+
 ```sql
 SELECT colname
 FROM table_name
 WHERE colname operator value
 ```
 operator 종류:
+
 ![](https://s-seo.github.io/assets/images/post_sql_3.PNG) 
-출처: <https://www.coursera.org/learn/sql-for-data-science/lecture/ESCUo/basics-of-filtering-with-sql>
+> 출처: <https://www.coursera.org/learn/sql-for-data-science/lecture/ESCUo/basics-of-filtering-with-sql>
 
 또는
+
 ```sql
 WHERE ~ IN (~,~,~)
 WHERE ~ OR ~
 WHERE ~ AND ~
 WHERE NOT ~
 ```
+
 또한 조건문에 괄호 붙여서 순서 정할 수 있다. 
 
 
@@ -190,6 +205,7 @@ WHERE size LIKE '%Pizza%'
 * Adding Comments 
 
 single line은 two dash
+
 ```sql
 SELECT shoe_id
 -- ,brand_id
@@ -198,6 +214,7 @@ FROM Shoes
 ```
 
 section은 /* */ 사용함
+
 ```sql
 SELECT shoe_id
 /*,brand_id
@@ -210,17 +227,8 @@ FROM Shoes
 
 
 
-
-
-
-
-
-
-
-
-
-
 * subqueries : 쿼리 안에 쿼리가 있는 형태인데, 주로 2개 이상의 테이블을 한번에 다룰 때 유용하게 쓰임. 일종의 문법이며 filtering에서 자주 쓰임
+
 ```sql
 SELECT customerID, companyName, Region
 FROM Customers
@@ -230,12 +238,11 @@ WHERE customerID in (SELECT customerID
 ```
 
 
-위 코드는 모두 coursera의 SQL 강의에서 작성한 것이다.
-
-<https://www.coursera.org/learn/sql-for-data-science/home/welcome>
+위 코드는 모두 [coursera의 SQL 강의](https://www.coursera.org/learn/sql-for-data-science/home/welcome)에서 작성한 것이다.
 
 
 
+***
 
 # SQL with R, Python
 
@@ -250,6 +257,7 @@ SQL이 RDBMS와 유저 간 interpreter로서 역할을 하는 것을 알고 어�
 
 
 
+***
 
 # NoSQL(Not Only SQL)
 
