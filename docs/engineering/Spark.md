@@ -2,19 +2,24 @@
 layout: default
 title:  "Apache Hadoop & Spark"
 parent: Engineering
-nav_order: 97
+# nav_order: 97
 ---
 
+***
 
 데이터 사이언스는 business analysis, statistics와 data engineering의 교집합이다. 그래서인지 분석을 하다보면 분산 처리, 병렬 연산 등의 개념을 반드시 마주치게 된다. 이 기회에 저 쪽 개념을 확실히 알고자 의식의 흐름대로 이해한걸 정리해본다.
 
-## Intro
+***
+
+# Intro
 
 데이터 분석 공모전이나 프로젝트를 하게 되면 데이터 크기 자체가 TB를 넘어가는 일은 잘 없다. 그래서 보통 개인 노트북이나 데스크탑 등에 데이터를 저장하고 R, Python 등의 분석 프로그램에서 매번 불러와 사용한다. 그러나 TB, PB, ZB 단위의 데이터는 애초에 R, Python에서는 불러오는 것조차 버겁다. 기업의 데이터는 사이즈 자체가 매우 크니까 DB를 따로 저장, 처리할 필요가 있는데 주로 사용할 수 있는게 RDBMS(related database management system)다. 간단하게 말하면 데이터가 저장된 서버에서 데이터를 처리하는 시스템이다. 정형 데이터에 적합하고 RDBMS는 라이선스가 비싸기 때문에 수십 테라 이상의 데이터를 RDBMS에 저장하고, 처리하려면 비용이 어마무시하다. 이에 반해 하둡은 여러 대의 서버에 데이터를 저장하고, 각 서버에서 동시에 데이터를 처리하는 분산 처리를 지원하며 비정형 데이터도 다룰 수 있다. 
 
-> 그럼 하둡이 어떻게 작동되길래 저런걸 할 수 있는걸까?
+> "그럼 하둡이 어떻게 작동되길래 저런걸 할 수 있는걸까?"
 
-## 1. Hadoop
+***
+
+# 1. Hadoop
 
 * 정식 명칭은 Apache Hadoop이며 대용량 데이터를 분산 처리할 수 있는 Java 기반의 오픈 소스 프레임워크다. 2006년 Doug Cutting과 Mike Cafarella에 의해 개발되었으며 커딩의 아들이 가지고 놀던 코끼리 인형 이름에서 Hadoop이란 이름을 따왔다고 한다.
 
@@ -27,7 +32,7 @@ nav_order: 97
 * 분산 파일 시스템이며, 물리적으로 나눠져 있는 서버를 논리적으로 하나의 서버 형태로 구현한 파일 시스템이다. 이 때 마스터 서버를 NameNode, 슬레이브 서버를 DataNode라고한다.  
 
 ![](https://s-seo.github.io/assets/images/post_spark_3.PNG) 
-출처: <https://sodayeong.tistory.com/29>
+> 출처: <https://sodayeong.tistory.com/29>
 
 * 파일을 적당한 블록 사이즈(64mb, 128mb)로 나눠서 각 노드 클러스터(개별 컴퓨터)에 저장한다. 외부 시스템에서 하둡에 대용량 파일을 저장하면, 이 파일을 블록으로 쪼개서 각 블록을 서버의 로컬 디스크에 저장한다. 나중에 이 대용량 파일을 읽을 때는 여러 서버(디스크)에서 동시에 읽는다. 
 
@@ -56,7 +61,7 @@ nav_order: 97
 5. 모든 데이터에 Reduce task를 병행하여 데이터를 처리한다. (Reduce 처리)
 
 ![](https://s-seo.github.io/assets/images/post_spark_5.PNG) 
-출처: <https://dreamshutter.tistory.com/24>
+> 출처: <https://dreamshutter.tistory.com/24>
 
 * 위 그림은 하둡의 word count process를 시각화한 것이다. 이러한 절차를 이해하는 것은 쉽지만 코드로 구현하는 것은 어려운데, 하둡 라이브러리의 객체를 상속받아 메서드 오버라이딩을 하고 최종적으로 구현된 클래스를 모아 jar 형태로 만들어 배치 형태로 하둡에 다시 제출해야 하기 때문이다. 
 
@@ -100,26 +105,19 @@ nav_order: 97
 
 
 
+***
 
-
-
-
-
-
-
-## 2. Apache Spark
+# 2. Apache Spark
 
 이제 본 포스트의 목적인 Spark에 대해 알아보자. 위의 Hadoop의 한계로 나온 것이 Spark라고 볼 수 있다. 2009년 U.C. Berkely의 AMPLab에서 시작했다고 한다. Spark는 인메모리 기반의 대용량 데이터 고속 처리 엔진으로 범용 분산 클러스터 컴퓨팅 프레임워크다. Spark의 주요 개념은 Resilient Distributed Datasets (RDD)와 Directed Acyclic Graph (DAG) execution engine이다.
 
 ![](https://s-seo.github.io/assets/images/post_spark_6.PNG) 
-출처: <https://niceguy1575.tistory.com/entry/SPARK-Framework%EC%97%90%EC%84%9C-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%B6%84%EC%84%9D%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80>
+> 출처: <https://niceguy1575.tistory.com/entry/SPARK-Framework%EC%97%90%EC%84%9C-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%B6%84%EC%84%9D%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%EA%B0%80>
 
 위 그림은 Spark의 프레임워크를 시각화한 것이다. 흔히 Spark를 하둡과 연계하여 HDFS에서 데이터 소스를 가져오지만, 직접 DBMS로부터 조회하거나, CSV를 호출하는 것도 가능하다. 또한 Spark engine을 사용해서 SQL, ML, streaming, Graph analysis의 분석을 할 수 있다.
 
 
-ETL(Extract, Transform, Load)은 정제되지 않은 데이터를 분석에 용이한 형태로 가공하는 일련의 과정이다. Data sources에서 data warehouse로 탈바꿈시키는 과정을 일컫는다. Spark는 이 중 load 정도만 담당하고, load된 데이터를 분석할 수 있다. E,T는 하둡 프레임워크에서 담당한다.
-
-Spark 프레임워크에서 데이터 처리 방법론은 다음과 같다.
+ETL(Extract, Transform, Load)은 정제되지 않은 데이터를 분석에 용이한 형태로 가공하는 일련의 과정이다. Data sources에서 data warehouse로 탈바꿈시키는 과정을 일컫는다. Spark는 이 중 load 정도만 담당하고, load된 데이터를 분석할 수 있다. E,T는 하둡 프레임워크에서 담당한다. Spark 프레임워크에서 데이터 처리 방법론은 다음과 같다.
 
 1. Data source로부터 데이터를 호출하여 RDD화 한다.
 2. Transformation: 수행하고 싶은 operation으로 RDD tranformation
@@ -130,7 +128,7 @@ Spark의 특징 중 하나는 lazy excution인데, transformation 단계가 아�
 
 
 
-#### 2-(1). Resilient Distributed Datasets (RDD)
+### 2-(1). Resilient Distributed Datasets (RDD)
 
 RDD는 Spark에서 사용하는 데이터 형태다. 여러 분산 노드에 저장되는 변경 불가능한 데이터의 집합이다. 현재는 RDD의 단점을 보완한 Dataset, DataFrame이 나왔다.
 
@@ -139,43 +137,34 @@ RDD는 Spark에서 사용하는 데이터 형태다. 여러 분산 노드에 저
 - Dataset: 분산된 데이터의 모음
 
 
-
-
-
 두 가지 작업만을 지원한다. 
 - Transformation: 새로운 RDD 데이터를 생성
 - Action: RDD를 처리
 
 
+### 2-(2). Directed Acyclic Graph (DAG) execution engine
 
-#### 2-(2). Directed Acyclic Graph (DAG) execution engine
-
-Spark의 scheduling을 담당한다. 어느 작업이 어떤 노드에서 어떤 순서로 실행되는지 결정한다. 
-
-MapReduce의 느린 부분을 제거한 엔진이다. 
+Spark의 scheduling을 담당한다. 어느 작업이 어떤 노드에서 어떤 순서로 실행되는지 결정한다. MapReduce의 느린 부분을 제거한 엔진이다. 
 
 
 
+### 2-(3). Hadoop과의 비교
 
+- Spark는 In-Memory data engine을 통해 MapReduce 보다 100배 더 빠르게 작업을 수행할 수 있다.
 
-#### Hadoop과의 비교
+- 또한 Spark는 다양한 언어를 지원하기 때문에 개발화 친화적이라는 점에서 하둡보다 유용하다. 
 
-Spark는 In-Memory data engine을 통해 MapReduce 보다 100배 더 빠르게 작업을 수행할 수 있다.
+- Spark에서는 하둡의 분산 처리 엔진이 갖는 복잡함을 간단한 메서드 호출로 커버한다. 예를 들어 word count process는 MapReduce에서는 50줄이 필요하지만 Spark에서는 몇 줄로 줄일 수 있다.
 
-또한 Spark는 다양한 언어를 지원하기 때문에 개발화 친화적이라는 점에서 하둡보다 유용하다. 
+- 하둡은 HDFS와 MapReduce를 사용하기 때문에 Spark가 반드시 필요하지는 않다. Spark도 HDFS 외 다른 클라우드 기반 데이터 플랫폼과 융합될 수 있어 하둡이 반드시 필요하지는 않다. 
 
-Spark에서는 하둡의 분산 처리 엔진이 갖는 복잡함을 간단한 메서드 호출로 커버한다. 예를 들어 word count process는 MapReduce에서는 50줄이 필요하지만 Spark에서는 몇 줄로 줄일 수 있다.
+- 하둡은 매번 Job의 결과를 디스크에 기록하기 때문에 HDFS나 MapReduce 과정에서 오류가 나더라도 결과를 활용할 수 있고, Spark는 RDD를 사용하기 때문에 오류가 나도 완벽하게 복구할 수 있다. 방식만 다를 뿐 둘 다 오류에 강건한 프레임워크다.
 
-
-하둡은 HDFS와 MapReduce를 사용하기 때문에 Spark가 반드시 필요하지는 않다. Spark도 HDFS 외 다른 클라우드 기반 데이터 플랫폼과 융합될 수 있어 하둡이 반드시 필요하지는 않다. 
-
-하둡은 매번 Job의 결과를 디스크에 기록하기 때문에 HDFS나 MapReduce 과정에서 오류가 나더라도 결과를 활용할 수 있고, Spark는 RDD를 사용하기 때문에 오류가 나도 완벽하게 복구할 수 있다. 방식만 다를 뿐 둘 다 오류에 강건한 프레임워크다.
-
-하둡은 데이터 일괄 처리를 최우선으로 하고, PB 데이터를 저렴하게 저장, 처리할 수 있다. Spark는 streaming data로의 전환이 용이하다.
+- 하둡은 데이터 일괄 처리를 최우선으로 하고, PB 데이터를 저렴하게 저장, 처리할 수 있다. Spark는 streaming data로의 전환이 용이하다.
 
 
 
-#### 특징
+### 2-(4). 특징
 - Speed: In-Memory 기반의 빠른 처리
 
 - Ease of Use: 다양한 언어(Java, Python, R, SQL 등)를 지원

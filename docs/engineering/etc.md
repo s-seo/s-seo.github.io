@@ -2,7 +2,7 @@
 layout: default
 title:  "etc"
 parent: Engineering
-nav_order: 97
+# nav_order: 99
 ---
 
 대충 아는 것은 자존심이 너무나 상한다.

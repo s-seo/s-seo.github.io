@@ -3,9 +3,10 @@ layout: default
 title:  "Language Model"
 excerpt: "왜 NLP는 딥러닝이 대세일까"
 parent: Statistic
-nav_order: 97
+# nav_order: 97
 ---
 
+***
 
 # 1. 언어 모델 (Language Model)
 
@@ -31,7 +32,7 @@ P(\mathcal{W}) = P(w_1,...,w_n) = \prod_{i=2}^{n-1} P(w_1)P(w_{i+1}|w_1,...,w_i)
 마지막은 내가 진짜 재밌어서 넣었다. 검색 엔진이 언어 모델을 사용하는 대표적인 예시다. 
 
 
-
+***
 
 # 2. 통계적 언어 모델 (Statistical Language Model)
 
@@ -49,6 +50,7 @@ P(w_3|w_1, w_2) &= \frac{P(w_1,w_2,w_3)}{P(w_1,w_2)} \\\\\\
 궁금한건 저 한계라는 것은 어차피 단어 빈도에 기반한 확률이다. 확률을 정의하는 여러 방법 중 빈도론이라는 한가지 접근법만 시도했을리는 없을텐데... 적어도 베이지안을 접목하려는 시도는 있었을 것이고, 그 방법 역시 잘 안됐던 것이 분명하다. 어떤 시도가 있었는지 알아보자!!
 
 
+***
 
 # 3. N-gram 언어 모델
 
@@ -60,7 +62,7 @@ P(w_3|w_1,w_2) \approx P(w_3|w_1)
 
 로 확률 값을 구하면 정확하지는 않지만 어느정도 근사한 값을 얻을 수 있다는 것이다. 아예 0의 확률값을 갖느니 biased estimates를 얻는다는 점에서 익숙한 원리다. 여기서 몇 개의 단어를 포함한 것인지 정해야하기 때문에 N-gram이라고 한다. -gram 이라는 표현이 네트워크 분석의 지표에서 나온 것 같아 궁금해서 찾아봤는데,     
 
-> Something written, drawn or otherwise recorded.
+> *Something written, drawn or otherwise recorded.*
 
 이라는 의미의 그리스어라고 한다. 네트워크는 검색해도 안나왔다... N-gram은 window라고 봐도 무방하며, unigrams, bigrams, trigrams, 4-grams,...로 나뉜다. 이 때 단어 sequence에서 N개 연속된 단어를 잡는 경우는 여러 가지가 있는데, 그 중 가장 가까운 n-1개 단어만을 고려한다. 예를 들어 $w_5$의 조건부 확률을 bigrams를 이용해서 나타내고 싶다면,
 
@@ -77,13 +79,14 @@ P(w_5|w_3,w_4) = \frac{count(w_3,w_4,w_5)}{count(w_3,w_4)}
 역시 적절한 $n$을 찾는 것이 문제다. 권장하는 $n$은 최대 5를 넘겨서는 안된다는 것인데 이는 검정에 필요한 최소 표본 수는 30이다라고 말하는 것과 같다. 
 
 
+***
 
 # 4. 기타 generalization methods
 
 * Smoothing
 
 ![](https://s-seo.github.io/assets/images/post_LM_1.PNG) 
-출처: <https://www.marekrei.com/pub/Machine_Learning_for_Language_Modelling_-_lecture3.pdf>
+> 출처: <https://www.marekrei.com/pub/Machine_Learning_for_Language_Modelling_-_lecture3.pdf>
 
 N-gram이어도 확률값이 0인 경우에는 일정 기준(smooth)에 따라 0보다 큰 확률값을 부여한다는 것
 
@@ -107,7 +110,7 @@ P_{K N}\left(w_{i} \mid w_{i-1}\right)=\frac{\max \left(C\left(w_{i-1} w_{i}\rig
 
 
 
-
+***
 
 # 5. Perplexity (PPL)
 
@@ -122,11 +125,13 @@ PPL(W) = P(w_1,...,w_n)^{-\frac{1}{n}} = \sqrt{\frac{1}{\prod_{i=2}^{n-1} P(w_1)
 당연히 PPL이 낮다고 무조건 좋은 언어 모델은 아니다. 사람이 직접 느끼기에 다를 수 있고, 테스트 데이터의 양, 도메인 등의 변수의 영향을 고려해야 한다. 
 
 ![](https://s-seo.github.io/assets/images/post_LM_2.PNG) 
-출처: <https://research.fb.com/building-an-efficient-neural-language-model-over-a-billion-words/>
+> 출처: <https://research.fb.com/building-an-efficient-neural-language-model-over-a-billion-words/>
 
 위 테이블은 페이스북 AI 연구팀에서 n-gram LM과 딥러닝 기반의 LM을 PPL로 비교한 것이다. 가장 위의 모델이 Kneser-Ney smoothing를 적용한 5-gram LM인데 다른 딥러닝 기반 LM에 비해 PPL이 높다. 
 
 
-### 참고
+***
+
+# 참고
 > <https://wikidocs.net/21687> <br>
 > <https://www.marekrei.com/pub/Machine_Learning_for_Language_Modelling_-_lecture3.pdf>

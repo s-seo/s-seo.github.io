@@ -2,15 +2,17 @@
 layout: default
 title:  "MarkUp Language"
 parent: Engineering
-nav_order: 97
+# nav_order: 97
 ---
 
+***
 
 웹 개발, 크롤링을 해봤다면 HTML을 누구나 들어봤을 것이다. HTML은 Hyper Text MarkUp Language의 줄임말로 웹 페이지의 뼈대를 구성하는 언어다. 즉, HTML은 마크업 언어인데, 그럼 여기서 Mark-UP은 무엇인가?
 
 
+***
 
-### MarkUp Language
+# MarkUp Language
 
 > “마크업 언어(Markup Language)는 문서가 화면에 표시되는 형식을 나타내거나 데이터의 논리적인 구조를 명시하기 위한 규칙들을 정의한 언어의 일종이다. 데이터를 기술한 언어라는 점에서 프로그래밍 언어와는 차이가 있다.”
 
@@ -22,8 +24,9 @@ nav_order: 97
 
 
 
+***
 
-### MarkDown Language
+# MarkDown Language
 
 * 마크업 언어의 일종이다.
 * 사용자가 웹페이지를 개발하고자 HTML 파일을 작성하면 마크업 언어를 알아야한다는 약간의 장벽이 있다. 이 장벽을 좀 더 낮춘 것이 마크다운 언어로, 마크업에 비해 읽고 쓰는게 쉽다는 장점이 있다. **읽기도 쓰기도 쉬운 문서 양식**을 지향하기 때문에, 복잡한 태그 구조가 사라지고 간단한 텍스트들과 몇 가지 문법만 알면 작성할 수 있게 했다
@@ -45,9 +48,9 @@ nav_order: 97
 2. 표준이 없어 도구에 따라서 변환방식이나 생성물이 다르다.
 ```
 
+***
 
-
-### Lightweight Markup Language (가벼운 마크업 언어)
+# Lightweight Markup Language (가벼운 마크업 언어)
 
 * 간결한 문법을 가진 마크업 언어
 
@@ -64,13 +67,9 @@ nav_order: 97
 
   
 
+***
 
-
-### Wiki Markup (Wiki Text)
+# Wiki Markup (Wiki Text)
 
 * 위키백과와 같이 위키 웹사이트에 페이지를 기록하는 데 쓰이는 가벼운 마크업 언어이다.
 * 표준 위키 마크업 언어는 존재하지 않는다. 문법, 구조, 기능, 표제어 등은 -웹사이트에 쓰이는 -위키 소프트웨어에 따라 달라진다
-
-
-
-### 

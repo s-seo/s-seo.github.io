@@ -2,15 +2,19 @@
 layout: default
 title:  "Semantic Brand Score"
 parent: Statistic
-nav_order: 97
+# nav_order: 97
 ---
 
-## 1. Introduction
+***
+
+# 1. Introduction
 
 Semantic brand score (SBS) 는 text data를 기반으로한 brand importance 측정 방법이다. 꽤 오래 전부터 있었을 것 같은 개념이지만 의외로 2018년에 나왔다. 이전에는 주로 설문을 사용해 brand importance를 파악했는데, 이 경우 biased된 집단으로부터 왜곡된 결과를 얻을 수 있다는 큰 단점이 있다. SBS는 brand와 관련된 모든 유형의 text data에 적용가능하다. 또 brand 뿐만 아니라 어떠한 유형의 keywords의 strength를 파악할 수도 있다. 
 
 
-## 2. Basic Concept
+***
+
+# 2. Basic Concept
 
 SBS에서는 brand importance를 **brand prevalance, diversity, connectivity**라는 세가지 지표의 단순합으로 나타낸다. 이 세가지 지표는 각각 다음의 의미를 갖는다. 
 
@@ -21,7 +25,9 @@ SBS에서는 brand importance를 **brand prevalance, diversity, connectivity**�
 그럼 이 세가지 지표를 어떻게 계산할까? 먼저 text data에 적합한 preprocess를 적용하고, word co-occurence network를 구축한다. 이 network는 word에 해당하는 node와 각 node를 잇는 link로 구성되는데, 만약 A 단어가 B 단어와 within a range of five words이면 link가 생성되는 원리다. 이러한 range를 co-occurrence range라고 하며 window와 비슷한 개념이다.
 
 
-## 3. Calculation
+***
+
+# 3. Calculation
 
 i번째 단어를 $g_i$로 나타낼 때, 
 
@@ -38,7 +44,9 @@ $SBS(g_i) = \frac{PREV(g_i) - \bar{PREV(g_i)}}{sd(PREV(g_i))} + \frac{DIV(g_i) -
 본고에서 future work으로 different constant weighting을 제시하긴 한다. 
 
 
-## 4. Python Code
+***
+
+# 4. Python Code
 
 <https://towardsdatascience.com/calculating-the-semantic-brand-score-with-python-3f94fb8372a6>를 참고했다. 
 
@@ -48,8 +56,9 @@ SBS + sentiment analysis와 python 실습을 다루겠다.
 
 
 
+***
 
-## References
+# References
 
 [1] Fronzetti Colladon, A. (2018). The Semantic Brand Score. Journal of Business Research, 88, 150–160. <https://doi.org/10.1016/j.jbusres.2018.03.026>
 

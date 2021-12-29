@@ -2,14 +2,17 @@
 layout: default
 title:  "Confluence"
 parent: Software
-nav_order: 97
+# nav_order: 97
 ---
+
+***
 
 크래프톤 입사하고 처음 접해보는 시스템, 프로그램이 많았는데 그 중 하나는 위키(도메인이 wiki로 시작함)였다. 위키라고 하면 흔히 위키백과를 떠올리게 되는데, 크래프톤에서는 이 위키라는 것에다가 모든 보고서, 가이드 등의 문서를 작성, 수정, 보관, 공유하고 있다. 그래서 내가 아는 위키 개념(개방적, 누구라도 수정 가능)과 회사 문서(기밀, 폐쇄성)이 매우 상충되어서 혼란스러웠는데, 이 참에 제대로 정리해보려고 한다.
 
 
+***
 
-### 위키
+# 위키
 
 * 위키는 불특정 다수가 협업을 통해 직접 내용과 구조를 수정할 수 있는 웹사이트를 일컫는다
 
@@ -28,9 +31,9 @@ nav_order: 97
 * allow content to be written using a simplified markup language and sometimes edited with the help of a rich-text editor
 * 위키 대부분은 협동적으로 개발하는 자유-오픈 소스 소프트웨어다. 즉, R이나 Python처럼 자유롭게 배포하고 발전시키는 소프트웨어인셈. 내가 헷갈렸던 부분은 위키가 하나의 회사라고 생각했던 점이었다. 위키는 회사가 아니라 특정 스타일의 웹사이트를 일컫는다.
 
+***
 
-
-### Confluence
+# Confluence
 
 - 위키 소프트웨어(a web-based corporate wiki)의 한 종류다. [(wiki hosting services)](https://en.wikipedia.org/wiki/Comparison_of_wiki_hosting_services) 
 - Atlassian이라는 회사에서 만든 자바 기반의 상용 위키 소프트웨어다. 크래프톤에서는 Atlassian의 Confluence 라이선스를 구매해서 직접 운영하는 서버에 설치하여 사용하고 있는 것 같다. Jira라는 project and issue tracking 소프트웨어도 Atlassian에서 개발, 판매하고 있는데 이것과 연동(자주 쓰는 기능)시켜 협업할 수 있다.

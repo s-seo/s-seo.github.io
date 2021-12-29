@@ -2,9 +2,8 @@
 layout: default
 title:  "AWS"
 parent: Engineering
-nav_order: 97
+# nav_order: 97
 ---
-
 
 
 AWS ECR (Elastic Container Registry)

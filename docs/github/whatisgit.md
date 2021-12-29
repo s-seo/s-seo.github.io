@@ -5,10 +5,13 @@ parent: Git
 nav_order: 3
 ---
 
+***
+
 컴퓨터 포맷을 한 김에 github을 처음 시작하는 방법도 같이 정리해보려고 한다. 이전 포스팅에서는 git, github이 사용가능하다는 전제 하에 블로그를 시작하는 방법을 정리했다. Github는 버전 관리 시스템 웹호스팅을 맡은 일종의 저장소이자 서비스이며, git은 저장소에 내 resource를 버전 별로 저장, 관리해주는 시스템이다.
 
+***
 
-## Git이란
+# Git이란
 
 ![](https://s-seo.github.io/assets/images/post_git_1.png) 
 > 출처: <https://velog.io/@leobit/Git-workflow>
@@ -31,8 +34,9 @@ git은 형상 관리 도구(configuration management tool) 중 하나다. 다른
 * `Merge`: 다른 브랜치의 내용을 현재 브랜치로 가져와 합치는 작업
 
 
+***
 
-## Git 설치
+# Git 설치
 
 [git 설치 사이트](https://git-scm.com)에 들어가 git을 다운받는다. 거의 다 `Next`를 눌러 넘기되, terminal emulator 선택화면에서는 **Use Window's default console window**를 선택한다. git을 처음 설치하면 사용할 이름, 이메일을 등록해야 한다. cmd를 실행해서 아래 명령어를 입력하자
 
@@ -42,8 +46,9 @@ $ git config --global user.email 사용할이메일
 ```
 
 
+***
 
-## Git 명령어
+# Git 명령어
 
 `$ git init`: 해당 폴더에 깃을 시작시킴. 해당 디렉토리에 ".git"이란 숨겨진 하위폴더가 생성됨
 
