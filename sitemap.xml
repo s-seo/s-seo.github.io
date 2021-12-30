@@ -1,219 +1,29 @@
 ---
+layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
 
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
 
-<url>
-  <loc>https://s-seo.github.io/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/About/cv/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/About/projects_summary/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/Projects_summary/subproject_5/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/Projects_summary/subproject_4/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/Projects_summary/subproject_3/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/Projects_summary/subproject_2/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/Projects_summary/subproject_1/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/coding</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/algorithm/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/OOP1/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/OOP2/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/OOP3/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/Python/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/Coding/SQL/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/AWS/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/Airflow/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/Spark/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/Batch/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/cloud/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/Docker/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/Kubernetes/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/MarkUp/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/engineering/etc/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/git</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/github/githubpage/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/github/writepost/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/github/whatisgit/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/github/gitonnewdevice/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/github/newtheme/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/software</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/sofrware/Confluence/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/sofrware/Tableau/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/BayesianABtest/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/CAT/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/IRT/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/LanguageModel/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/SBS/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://s-seo.github.io/docs/statistic/TextNetwork/</loc>
-  <lastmod>2021-12-30T14:33:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
 
-
+    </url>
+  {% endfor %}
 </urlset>
