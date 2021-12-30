@@ -1,0 +1,17 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.html_pages %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.last_modified_date == null %}
+        <last_modified_date>2021-01-07</lastmod>
+        {% else %}
+        <last_modified_date>{{ post.last_modified_date | date_to_xmlschema }}</lastmod>
+        {% endif %}
+        <loc>{{ site.url }}{{ post.url }}</loc>
+    </url>
+    {% endfor %}
+</urlset>
