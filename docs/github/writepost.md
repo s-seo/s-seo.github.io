@@ -127,24 +127,3 @@ $ git push -u origin master
 실행하면 [username].github.io repo에 업로드 된 것을 확인할 수 있다. 이제 블로그에 들어가면 로컬에서 만들었던 웹페이지가 그대로 구현되어 있을 것이다. 
 
 
-
-### - Google 검색에 노출
-
-작성한 글을 다른 사람이 보게 하는 것도 좋은 시도다. `robot.txt`와 `sitemap.xml`을 만들어 구글 search console에 등록하면 되는데, 결과적으로 구글에서 `sitemap.xml`을 인식하지 못해 계속 시도하는 중이다. 검색해보니 just-the-docs 테마를 쓰는 사람 중 나와 같은 문제가 발생한 사람이 있다. <https://jjuhey.github.io/docs/trouble-shooting/sitemap-missing/> 이 분이 해결한 방식대로 sitemal.xml을 다시 제출했으나 여전히 인식하지 못하는 상황이다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
