@@ -11,7 +11,7 @@ nav_order: 6
 
 ***
 
-# - Google 검색에 노출
+# Google 검색에 노출
 
 깃헙과 구글은 독립적인 회사다. 깃헙 페이지로 작성한 글을 구글에서 검색이 되게 하려면 이 둘을 연결지어야 하는데, 그 역할을 하는 것이 `sitemap.xml`과 `robots.txt`다. 
 
@@ -101,47 +101,13 @@ Sitemap: http://[uername].github.io/sitemap.xml
 
 
 
-## - sitemap.xml 인식 오류
+## sitemap.xml 인식 오류
 
 구글 검색해서 내 사이트가 나오게 하려고 지금 일주일 넘게 시도 중이다. 방법은 `robot.txt`와 `sitemap.xml`을 만들어 Google search console에 등록하면 되는데, 구글에서 `sitemap.xml`을 인식하지 못해 계속 시도하는 중이다. 지금(2022-01-01) 이 상태다.
 
 ![](https://s-seo.github.io/assets/images/post_googlesearch_1.png) 
 
-`유형`이나 `상태`가 각각 *알 수 없음*, *오류, 가져올 수 없음 등*으로 뜨는 것이 처음 며칠 동안은 일반적이라고 했으나 나의 경우는 며칠이 지나도 해결이 안되는 것 같다. 해결 방법을 찾다가 나와 같은 **just-the-docs** 테마를 쓰는 사람([jjuhey](https://jjuhey.github.io/docs/trouble-shooting/sitemap-missing/))을 찾았는데, `site.posts`가 아니라 `site.html_pages`로 바꿨어야 했다.
-
-```
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.html_pages %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
-
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
-
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
-
-    </url>
-  {% endfor %}
-</urlset>
-```
-
-아래 `lastmod`나 `changefreq`, `priority`는 크게 중요하지 않은 것 같다. 저 분이 해결한 방식인 [sitemap2.xml](https://jjuhey.github.io/sitemap2.xml)을 보면 `lastmod`와 `changefreq`가 xml에 들어가지만, 이 분의 docs에는 sitemap의 하위 인자로서 저 값이 (모든 문서에) 들어가지는 않는다. `lastmod`는 거의 모든 문서에 들어가 있는 것 같긴한데 `changefreq`가 없는데 무슨 소용... 그리고 어차피 `null`값이면 default 값을 넣게끔 설정이 되어있다. 따라서 이 부분은 문제가 되지 않는 것 같고, 그나마 고친 부분이 있다면 `config`의 `url`에서 quotation mark를 제거한 것..? 왜냐면 sitemap.xml에서 `site.url`이 들어가는데 여기에 쌍따옴표가 있으면 제대로 인식이 안되기 때문이다. 이런 부분들을 고쳤는데도 여전히 인식하지 못하는 상황이다.ㅠㅠ 어차피 구글에서 크롤링 봇으로 url을 인식하는데 길게는 몇 달이 걸린다고는 하니... 이쯤해두고 기다려보기로 했다. 만약 몇 달이 지나도 인식이 안됐을 경우,
+`유형`이나 `상태`가 각각 *알 수 없음*, *오류, 가져올 수 없음 등*으로 뜨는 것이 처음 며칠 동안은 일반적이라고 했으나 나의 경우는 며칠이 지나도 해결이 안되는 것 같다. 해결 방법을 찾다가 나와 같은 **just-the-docs** 테마를 쓰는 사람([jjuhey](https://jjuhey.github.io/docs/trouble-shooting/sitemap-missing/))을 찾았는데, `site.posts`가 아니라 `site.html_pages`로 바꿨어야 했다. 또 `lastmod`나 `changefreq`, `priority`는 크게 중요하지 않은 것 같다. 저 분이 해결한 방식인 [sitemap2.xml](https://jjuhey.github.io/sitemap2.xml)을 보면 `lastmod`와 `changefreq`가 xml에 들어가지만, 이 분의 docs에는 sitemap의 하위 인자로서 저 값이 (모든 문서에) 들어가지는 않는다. `lastmod`는 거의 모든 문서에 들어가 있는 것 같긴한데 `changefreq`가 없는데 무슨 소용... 그리고 어차피 `null`값이면 default 값을 넣게끔 설정이 되어있다. 따라서 이 부분은 문제가 되지 않는 것 같고, 그나마 고친 부분이 있다면 `config`의 `url`에서 quotation mark를 제거한 것..? 왜냐면 sitemap.xml에서 `site.url`이 들어가는데 여기에 쌍따옴표가 있으면 제대로 인식이 안되기 때문이다. 이런 부분들을 고쳤는데도 여전히 인식하지 못하는 상황이다.ㅠㅠ 어차피 구글에서 크롤링 봇으로 url을 인식하는데 길게는 몇 달이 걸린다고는 하니... 이쯤해두고 기다려보기로 했다. 만약 몇 달이 지나도 인식이 안됐을 경우,
 
 - 모든 docs에 sitemap 하위 인자로 `lastmod`, `priority`를 넣어보거나
 - sitemap.xml을 for loop로 돌리는게 아니라 <https://www.xml-sitemaps.com/>에서 직접 sitemap.xml을 따서 제출해보는 방식
@@ -161,7 +127,7 @@ layout: null
 
 ***
 
-# - Naver
+# Naver
 
 Naver와 다음에 등록하려면 RSS feed를 아래와 같이 작성해서 root 디렉토리에 `feed.xml` 파일을 생성한다. 
 
@@ -203,7 +169,7 @@ layout: null
 
 ***
 
-# - Daum
+# Daum
 
 [다음 검색 등록](https://register.search.daum.net/index.daum)에 접속해서 `등록` - `블로그 RSS 등록` - `블로그 URL`에 깃헙 블로그 url을 입력하면 된다.
 
