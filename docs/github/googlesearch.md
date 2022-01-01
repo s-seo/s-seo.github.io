@@ -103,7 +103,9 @@ Sitemap: http://[uername].github.io/sitemap.xml
 
 ## - sitemap.xml 인식 오류
 
-구글 검색해서 내 사이트가 나오게 하려고 지금 일주일 넘게 시도 중이다. 방법은 `robot.txt`와 `sitemap.xml`을 만들어 Google search console에 등록하면 되는데, 구글에서 `sitemap.xml`을 인식하지 못해 계속 시도하는 중이다. 
+구글 검색해서 내 사이트가 나오게 하려고 지금 일주일 넘게 시도 중이다. 방법은 `robot.txt`와 `sitemap.xml`을 만들어 Google search console에 등록하면 되는데, 구글에서 `sitemap.xml`을 인식하지 못해 계속 시도하는 중이다. 지금(2022-01-01) 이 상태다.
+
+![](https://s-seo.github.io/assets/images/post_googlesearch_1.png) 
 
 `유형`이나 `상태`가 각각 *알 수 없음*, *오류, 가져올 수 없음 등*으로 뜨는 것이 처음 며칠 동안은 일반적이라고 했으나 나의 경우는 며칠이 지나도 해결이 안되는 것 같다. 해결 방법을 찾다가 나와 같은 **just-the-docs** 테마를 쓰는 사람([jjuhey](https://jjuhey.github.io/docs/trouble-shooting/sitemap-missing/))을 찾았는데, `site.posts`가 아니라 `site.html_pages`로 바꿨어야 했다.
 
