@@ -7,12 +7,32 @@ parent: Engineering
 
 ***
 
-이전에 작성한 Hadoop & Spark 라는 문서가 있었는데 스파크를 따로 분리해서 작성해보려고 한다. 회사에서는 스파크 기반의 플랫폼을 구축하여 DB와 분석에 사용하고 있는데 이것의 정확한 작동 원리가 궁금하다. 그래서 일단 스파크가 무엇인지, 스파크를 선언해서 자원을 가져다 쓴다는게 무슨 의미인지 파악해보자.
-
+이전에 작성한 Hadoop & Spark 라는 문서가 있었는데 스파크를 따로 분리해서 작성해보려고 한다. 회사에서는 스파크 기반의 플랫폼을 구축하여 DB와 분석에 사용하고 있는데 이것의 정확한 작동 원리가 궁금하다. 그래서 일단 스파크가 무엇인지, 스파크를 선언해서 자원을 가져다 쓴다는게 무슨 의미인지 파악해보자. 
 
 ***
 
-# 1. Apache Spark
+
+# Spark
+
+
+
+스파크는 **통합 컴퓨팅  엔진이며, 클러스터 환경에서 데이터를 병렬로 처리하는 라이브러리 집합**라고 정의할 수 있다. (*스파크 완벽 가이드, 빌 체임버스*) 
+
+
+
+
+
+
+
+
+
+
+
+
+# Old post
+
+## 1. Apache Spark
+
 
 Hadoop의 한계로 나온 것이 Spark라고 볼 수 있다. 2009년 U.C. Berkely의 AMPLab에서 시작했다고 한다. Spark는 인메모리 기반의 대용량 데이터 고속 처리 엔진으로 범용 분산 클러스터 컴퓨팅 프레임워크다. Spark의 주요 개념은 Resilient Distributed Datasets (RDD)와 Directed Acyclic Graph (DAG) execution engine이다.
 
@@ -44,6 +64,7 @@ RDD는 Spark에서 사용하는 데이터 형태다. 여러 분산 노드에 저
 두 가지 작업만을 지원한다. 
 - Transformation: 새로운 RDD 데이터를 생성
 - Action: RDD를 처리
+
 
 
 ### 1-(2). Directed Acyclic Graph (DAG) execution engine
