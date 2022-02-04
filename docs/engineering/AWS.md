@@ -20,16 +20,39 @@ AWS는 Amazon Web Service의 준말인 것은 알았는데, 도대체 여기서 
 
 
 
-# 2. 
+# 2. AWS Infra
 
-AWS ECR (Elastic Container Registry)
+
+
+
+
+# 3. AWS 종류
+
+
+## 3-(1). AWS ECR (Elastic Container Registry)
+
 - Docker Container의 이미지를 저장하는 Repository 서비스
 - Docker hub의 Repository 서비스와 동일한데 차이점은 Docker Private Repository를 구축, 관리하는 역할을 AWS에 맡기는 managed 서비스라는 점
 - 장점: 컨테이너 이미지를 S3에 저장하기 때문에 고가용성 + AWS IAM 인증을 통해 이미지 push/pull에 대한 권한 관리가 가능함
 
-IAM registry
+## 3-(1). IAM registry
+
 - AWS(Amazon Web Service)의 ECR(Elastic Container Registry)을 사용하기 위한 도구
 - IAM을 통해 사용자 권한 관리 가능
+
+## 3-(1).
+
+## 3-(1).
+
+## 3-(1).
+
+## 3-(1).
+
+## 3-(1).
+
+## 3-(1).
+
+
 
 
 
