@@ -19,12 +19,12 @@
 # baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
 # url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-title: 모르는건 부끄러워
+title: 대충 아는건 부끄럽잖아
 email: baoro9394@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://s-seo.github.io # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  s-seo
+github_username: s-seo
 
 # theme: just-the-docs
 
