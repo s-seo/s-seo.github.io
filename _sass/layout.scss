@@ -30,8 +30,8 @@
   @include mq(md) {
     position: relative;
     // max-width: $content-width;
+    margin-right: 14%; // added
     margin-left: $nav-width-md;
-    margin-right: 14%; // add
   }
 
   @include mq(lg) {
