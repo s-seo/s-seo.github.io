@@ -13,8 +13,7 @@ nav_order: 1
 
 가장 근본적이고 쉬운 상황에서 시작해보자. 무언가를 작성해서 변경하고 누군가에게 공유하는 작업 중이라고 가정해보자. 아래와 같은 상황이 발생할 수 있다는 것은 다들 알고 있을 것이다.
 
-![](https://s-seo.github.io/assets/images/post_vcs_1.PNG) 
-> 출처: <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=ngyadpr&logNo=110183028824>
+[![](https://s-seo.github.io/assets/images/post_vcs_1.PNG){: width="20%" height="20%"}{: .center}](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=ngyadpr&logNo=110183028824)
 
 내가 변경한게 무조건 옳고 미래에도 이것만 보고 그 이전 기록들은 필요하지 않다면 그냥 '레알 최최최최최최최종'만 남기면 되지만, 실제로는 과거 기록들도 필요한 경우가 많다. (굳이 실무가 아니고 개인 프로젝트 할 때만 해도...) 저 기획자도 그러한 점을 알기 때문에 이런 기록을 남긴 채 '최'를 계속 덧붙이면서 해당 파일을 관리하고 있다. 근데 뭔가 체계적이지 않고, 어떤 부분이 변경되었는지 파악하기 어렵고, 동일한 파일을 여러 사람이 같이 작업할 때 작업본이 충돌되는 경우가 발생할 수 있다. 이러한 의도를 가진 채 단점을 보완하고자 나온 것이 Version Control System(VCS, 버전 관리 시스템)이다. VCS는 비단 코드에만 국한되지 않고 다른 파일에도 적용될 수 있는 개념이다. 우리가 흔히 아는 git은 2005년에 탄생했지만, VCS 자체는 1972년에 source code control system(SCSS)라는 형태로 나왔다고 볼 수 있다. 그럼 VCS가 정확히 무엇이고, 어떤 기능을 수행할 수 있는걸까?
 
@@ -123,7 +122,10 @@ $ git config --global user.email 사용할이메일
 
 
 
-# 3. Github (TBC)
+# 3. Github 
+
+WIP
+{: .label .label-yellow }
 
 Git과 Github은 무엇이 다를까? 이 질문에 답하려면 Git을 어떻게 사용하는지 부터 알아야 한다. 
 

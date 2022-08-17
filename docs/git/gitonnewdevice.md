@@ -3,6 +3,8 @@ layout: default
 title:  "새로운 장치에서 시작"
 parent: Git
 nav_order: 4
+date: 2022-08-17
+last_modified_date: 2022-08-17
 ---
 
 ***
