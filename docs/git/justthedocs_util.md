@@ -133,3 +133,11 @@ Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiu
 #### Heading with `<inline code snippet>` in it.
 ```
 
+
+## Image Align
+
+설명: `[![](이미지 주소){크기 조절}{정렬}](출처)`
+
+```
+[![](https://s-seo.github.io/assets/images/post_vcs_1.PNG){: width="20%" height="20%"}{: .center}](출처)
+```
