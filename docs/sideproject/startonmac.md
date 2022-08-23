@@ -66,4 +66,4 @@ fatal: cannot run /private/var/folders/bs/w1vq8wl96gb4twlddw0nss2c0000gn/T/AppTr
 
 이런 에러가 발생함. 그리고 username, password 등록하라고 뜬다. 이건 내가 깃헙 레포의 HTTPS로 git clone 시켰기 때문인건데, 그냥 깃헙에서 https로 git clone, pull, push하는 경우 username, password를 입력하게끔 설정해놓았다. (참고 https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls) 여기서 password는 PAT인데, 이건 따로 발급받아야 해서 귀찮다.. (참고 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) 이거 그냥 터미널에 복붙하면 붙여넣은지는 안 뜨는데 정상적으로 Push 된다. 깃헙 레포 가보니 커밋 내용 잘 반영된거 확인된다.
 
-
+- [20220823] PAT 발급받을 때 위 만료기간 설정해놓은걸 까먹어서 오늘 username, password 다시 입력하라 했을 때 약간 당황했다. 이 글 참고해서 다시 토큰 부여하고 커밋 푸쉬함
