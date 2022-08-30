@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Tableau"
-parent: Software
+parent: ETC
 # nav_order: 97
 ---
 
