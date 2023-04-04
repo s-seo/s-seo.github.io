@@ -6,7 +6,7 @@
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
+  background-color: $grey-lt-300;
 
   @include mq(md) {
     flex-wrap: nowrap;
@@ -56,7 +56,7 @@
 .main-header {
   z-index: 0;
   display: none;
-  background-color: $sidebar-color;
+  background-color: $grey-lt-300;
 
   @include mq(md) {
     display: flex;
@@ -121,8 +121,8 @@
   align-items: center;
   padding-top: $sp-3;
   padding-bottom: $sp-3;
-  // color: $body-heading-color;
-  font-weight: 700;
+  color: $grey-dk-200;
+  font-weight: 600;
   @include fs-5;
 
   @include mq(md) {
