@@ -121,8 +121,8 @@
   align-items: center;
   padding-top: $sp-3;
   padding-bottom: $sp-3;
-  color: $grey-dk-200;
   font-weight: 600;
+  color: $grey-dk-200;
   @include fs-5;
 
   @include mq(md) {
