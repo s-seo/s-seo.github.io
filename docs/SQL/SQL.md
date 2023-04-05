@@ -1,8 +1,8 @@
 ---
 layout: default
-title: ETC
-# nav_order: 1
+title: SQL
+# nav_order: 3
 has_children: true
-permalink: docs/ETC
+permalink: docs/sql
 has_toc: false
 ---

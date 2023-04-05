@@ -1,8 +1,8 @@
 ---
 layout: default
-title: ETC
-# nav_order: 1
+title: Python
+# nav_order: 3
 has_children: true
-permalink: docs/ETC
+permalink: docs/Python
 has_toc: false
 ---

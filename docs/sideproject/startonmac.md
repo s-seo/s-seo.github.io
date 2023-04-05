@@ -2,6 +2,7 @@
 layout: default
 title:  "Mac에서 개발환경 구축"
 parent: Side Projects
+permalink: /SideProjects/StartOnMac
 nav_order: 1
 date: 2022-08-22
 ---

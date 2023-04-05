@@ -2,6 +2,7 @@
 layout: default
 title:  "Confluence"
 parent: ETC
+permalink: /ETC/Confluence/
 # nav_order: 97
 ---
 

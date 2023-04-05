@@ -2,6 +2,7 @@
 layout: default
 title:  "Tableau"
 parent: ETC
+permalink: /ETC/Tableau/
 # nav_order: 97
 ---
 

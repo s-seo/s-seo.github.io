@@ -2,6 +2,7 @@
 layout: default
 title:  "VCS to Github(Gitlab)"
 parent: Git
+permalink: /Git/VCS/
 nav_order: 1
 ---
 
