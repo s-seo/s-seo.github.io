@@ -15,29 +15,29 @@ date: 2022-01-01
 
 ## 경력
 
-- Data Analyst at KRAFTON (2021-09 ~)
+- 데이터 분석가 / 크래프톤 (2021-09 ~)
 
-- Data Analyst at Samsung Economic Research Institue (2021-04 ~ 2021-06)
+- HR 데이터 분석가 / 삼성경제연구소 (2021-04 ~ 2021-06)
 
-- Laboratory Research Assistant at Seoul National University Hospital (2019-02 ~ 2019-08)
+- Laboratory Research Assistant / 서울대학교 병원 (2019-02 ~ 2019-08)
 
-- Intern at MONAMI (2018-12 ~ 2019-02)
+- 데이터 분석가 인턴 / 모나미 (2018-12 ~ 2019-02)
 
 ***
 
 ## 학력
 
-- Master of Science: Applied Statistics at Yonsei University - Seoul, Korea (2019-09 -Current)
+- 응용통계학 석사 / 연세대학교 (2019-09 ~ 2021-08)
 
-- Bachelor of Science: Applied Statistics at Yonsei University - Seoul, Korea (2012-03 - 2019-08)
+- 응용통계학 학사 / 연세대학교 (2012-03 - 2019-08)
 
 ***
 
 ## 수상 경력
 
-* Won the Grand Prize of 2020 BIGCONTEST Champion League → [Link](https://s-seo.github.io/projects/bigcon)
+* 2020 빅콘테스트 챔피언리그 최우수상 [Link](https://s-seo.github.io/projects/bigcon)
 
-* Won the 3rd place of 2018 Yonsei University Big Data Analysis Contest → [Link](https://s-seo.github.io/projects/yonsei)
+* 2018 연세 빅데이터 분석 경연대회 3등 [Link](https://s-seo.github.io/projects/yonsei)
 
 ***
 

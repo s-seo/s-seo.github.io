@@ -141,3 +141,21 @@ Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiu
 ```
 [![](https://s-seo.github.io/assets/images/post_vcs_1.PNG){: width="20%" height="20%"}{: .center}](출처)
 ```
+
+## Panel (?)
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+{: .fs-5 .ls-10 .bg-grey-dk-000 .text-grey-dk-300 .code-example }
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+{: .fs-3 .ls-10 .bg-grey-lt-200 .text-grey-dk-300 .note }
+
+페이지 끝까지 펼쳐지는 패널도 지원해주는 것 같다. 
+
+```
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+{: .fs-5 .ls-10 .bg-grey-dk-000 .text-grey-dk-300 .code-example }
+
+A paragraph
+{: .fs-3 .ls-10 .bg-grey-lt-200 .text-grey-dk-300 .note }
+```
