@@ -128,3 +128,21 @@ $ git push -u origin master
 실행하면 [username].github.io repo에 업로드 된 것을 확인할 수 있다. 이제 블로그에 들어가면 로컬에서 만들었던 웹페이지가 그대로 구현되어 있을 것이다. 
 
 
+
+### 오랜만에 포스트 작성한다면
+
+먼저, git pull로 최신 원격 저장소를 가져와 로컬 저장소에 merge 시켜 싱크를 맞춘다.
+
+```ruby
+$ git pull origin master
+```
+
+포스트 작성 후
+
+```ruby
+$ git status
+$ git add .
+$ git commit -m ''
+$ git push origin master
+```
+
