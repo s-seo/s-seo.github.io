@@ -49,11 +49,11 @@ CH 11. 잘 안 되면 미련 없이 돌아서라
 - 붙잡는 방법 또한 중요함
   - 쿠팡에서 와우 회원을 잡는 예시?
 
-![](https://s-seo.github.io/assets/images/post_converted_1.PNG)
+![](https://s-seo.github.io/assets/images/post_converted_1.png)
 
-![](https://s-seo.github.io/assets/images/post_converted_2.PNG)
+![](https://s-seo.github.io/assets/images/post_converted_2.png)
 
-![](https://s-seo.github.io/assets/images/post_converted_3.PNG)
+![](https://s-seo.github.io/assets/images/post_converted_3.png)
 
 CH 12. 구글의 광고 프로젝트에서 얻은 교훈
 {: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }
