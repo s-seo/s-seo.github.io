@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Book
+title: Read
 # nav_order: 3
 has_children: true
-permalink: docs/book
+permalink: docs/read
 ---
 
 # Book
