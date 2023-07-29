@@ -74,19 +74,13 @@ A/B test 1: 인게임 재화 충전 모달 A/B test
 |----------------------------------------------|----------------------------------------------|----------------------------------------------|
 | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="200"} | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_2.png){: width="400" height="200"} | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_3.png){: width="400" height="200"} |
 
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="200"}
-
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_2.png){: width="400" height="200"}
-
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_3.png){: width="400" height="200"}
 
 - 테스트하려는 UI
-  - 기존
 
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_4.png){: width="400" height="200"}
+| 기존                                       | 변경                                       |
+|--------------------------------------------|--------------------------------------------|
+| ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_4.png){: width="400" height="200"} | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_5.png){: width="400" height="200"} |
 
-  - 변경
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_5.png){: width="400" height="200"}
 
 
 
