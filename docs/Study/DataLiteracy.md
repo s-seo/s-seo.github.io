@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "Data Literacy for PM"
-parent: ETC
-permalink: /ETC/DataLiteracy/
+parent: Study
+permalink: /study/DataLiteracy/
 # nav_order: 97
 ---
 

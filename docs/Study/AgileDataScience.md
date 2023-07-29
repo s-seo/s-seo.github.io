@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "Data Science and Agile"
-parent: Read
-permalink: /Read/ReadAgileDataScience/
+parent: Study
+permalink: /study/AgileDataScience/
 nav_order: 3
 date: 2023-07-11
 ---

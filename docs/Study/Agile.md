@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "함께 자라기 - 애자일로 가는 길"
-parent: Read
-permalink: /Read/ReadAgile/
+parent: Study
+permalink: /study/Agile/
 nav_order: 3
 date: 2023-06-20
 ---

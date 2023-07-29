@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "데이터 과학자 원칙"
-parent: Read
-permalink: /Read/ReadDataScienceNine/
+parent: Study
+permalink: /study/DataScienceNine/
 nav_order: 3
 date: 2023-07-27
 ---

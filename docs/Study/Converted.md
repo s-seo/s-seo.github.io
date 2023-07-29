@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "컨버티드"
-parent: Read
-permalink: /Read/ReadConverted/
+parent: Study
+permalink: /study/Converted/
 nav_order: 3
 date: 2023-06-20
 ---
