@@ -68,13 +68,26 @@ A/B test 분석, 결과 전달에 필수적으로 들어가야 할 내용
 A/B test 1: 인게임 재화 충전 모달 A/B test
 
 - 21년 11월에 진행
-- 
+- 충전 모달 퍼널
+
+| 퍼널 1                                       | 퍼널 2                                       | 퍼널 3                                       |
+|----------------------------------------------|----------------------------------------------|----------------------------------------------|
+| ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="200"} | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_2.png){: width="400" height="200"} | ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_3.png){: width="400" height="200"} |
 
 ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="200"}
 
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="400"}
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_2.png){: width="400" height="200"}
 
-![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png)
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_3.png){: width="400" height="200"}
+
+- 테스트하려는 UI
+  - 기존
+
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_4.png){: width="400" height="200"}
+
+  - 변경
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_5.png){: width="400" height="200"}
+
 
 
 
