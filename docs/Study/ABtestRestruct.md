@@ -72,7 +72,9 @@ A/B test 1: 인게임 재화 충전 모달 A/B test
 
 ![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="200"}
 
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png){: width="400" height="400"}
 
+![](https://s-seo.github.io/assets/images/post_ABtestRestruct_1.png)
 
 
 
