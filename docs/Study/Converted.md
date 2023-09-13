@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "컨버티드"
+title:  "[책] 컨버티드"
 parent: Study
 permalink: /study/Converted/
 nav_order: 3

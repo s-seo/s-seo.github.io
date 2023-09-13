@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "데이터 과학자 원칙"
+title:  "[책] 데이터 과학자 원칙"
 parent: Study
 permalink: /study/DataScienceNine/
 nav_order: 3

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "함께 자라기 - 애자일로 가는 길"
+title:  "[책] 함께 자라기 - 애자일로 가는 길"
 parent: Study
 permalink: /study/Agile/
 nav_order: 3

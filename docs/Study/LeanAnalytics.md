@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "린 분석"
+title:  "[책] 린 분석"
 parent: Study
 permalink: /study/LeanAnalytics/
 nav_order: 3

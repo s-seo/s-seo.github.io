@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "통계 101 x 데이터 분석"
+title:  "[책] 통계 101 x 데이터 분석"
 parent: Study
 permalink: /study/Statistics101/
 nav_order: 3
