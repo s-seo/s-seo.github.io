@@ -8,7 +8,7 @@ def summarize_file(file_path):
     with open(file_path, 'r') as f:
         post_content = f.read()
 
-    response = requests.post('http://localhost:8000/summarize', json = {'text': post_content})
+    response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': post_content})
     summarized_content = response.json()['summary']
 
     with open(file_path, 'w') as f:
