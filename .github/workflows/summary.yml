@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # 모든 커밋과 태그를 가져옵니다.
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -19,6 +21,6 @@ jobs:
     - name: Get list of changed files
       id: getfile
       run: |
-        echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})" >> $GITHUB_ENV
+        echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})" >> $GITHUB_ENV        
     - name: Run summarization script
-      run: python summarize_post.py ${{ steps.getfile.outputs.files }}
+      run: python summarize_post.py ${{ env.files }}
