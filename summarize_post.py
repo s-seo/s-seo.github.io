@@ -10,13 +10,17 @@ def summarize_file(file_path):
 
     response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': post_content})
     summarized_content = response.json()['summary']
+    print(summarized_content)
 
     with open(file_path, 'w') as f:
         f.write(summarized_content)
         f.write("\n\n")
         f.write(post_content)
 
-    return summarized_content
+    with open(file_path, 'r') as f:
+        print(f"Content of {file_path} after writing:")
+        print(f.read())
+
 
 if __name__ == "__main__":
     changed_files = sys.argv[1].split()
@@ -24,5 +28,4 @@ if __name__ == "__main__":
     for file in changed_files:
         if file.endswith('.md') and 'docs/' in file:
             print(file)
-            s_content = summarize_file(file)
-            print(s_content)
+            summarize_file(file)
