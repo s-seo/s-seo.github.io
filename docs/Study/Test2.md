@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "summary test"
+title:  "summary test2"
 parent: Study
-permalink: /study/Test/
+permalink: /study/Test2/
 nav_order: 3
 date: 2023-09-14
 ---
