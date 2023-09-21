@@ -16,10 +16,13 @@ def summarize_file(file_path):
         f.write("\n\n")
         f.write(post_content)
 
+    return summarized_content
+
 if __name__ == "__main__":
     changed_files = sys.argv[1].split()
     print(changed_files)
     for file in changed_files:
         if file.endswith('.md') and 'docs/' in file:
             print(file)
-            summarize_file(file)
+            s_content = summarize_file(file)
+            print(s_content)
