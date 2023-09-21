@@ -16,5 +16,9 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests
+    - name: Get list of changed files
+      id: getfile
+      run: |
+        echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})"
     - name: Run summarization script
       run: python summarize_post.py ${{ steps.getfile.outputs.files }}

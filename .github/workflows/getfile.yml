@@ -1,4 +1,0 @@
-- name: Get list of changed files
-  id: getfile
-  run: |
-    echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})"
