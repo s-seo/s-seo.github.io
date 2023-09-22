@@ -1,0 +1,33 @@
+name: Auto Summarize Post
+on:
+  push:
+    paths:
+    - 'docs/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        pip install requests
+    - name: Get list of changed files
+      id: getfile
+      run: |
+        echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})" >> $GITHUB_ENV        
+    - name: Run summarization script
+      run: python summarize_post.py ${{ env.files }}
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "baoro9394@gmail.com"
+        git config --global user.name "s-seo"
+        git add -A
+        git diff-index --quiet HEAD || git commit -m "Summary Added" && git push
