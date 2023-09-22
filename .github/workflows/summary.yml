@@ -10,7 +10,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # 모든 커밋과 태그를 가져옵니다.
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -24,3 +25,9 @@ jobs:
         echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})" >> $GITHUB_ENV        
     - name: Run summarization script
       run: python summarize_post.py ${{ env.files }}
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "baoro9394@gmail.com"
+        git config --global user.name "s-seo"
+        git add -A
+        git diff-index --quiet HEAD || git commit -m "Auto update" && git push
