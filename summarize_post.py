@@ -8,8 +8,9 @@ def summarize_file(file_path):
     with open(file_path, 'r') as f:
         post_content = f.read()
 
+    length = 4000
     summarized_contents = []
-    for i in range(0, len(post_content), length = 4000):
+    for i in range(0, len(post_content), length):
         response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': post_content[i:i + length]})
         summarized_contents.append(response.json()['summary'])
     
