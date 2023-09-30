@@ -7,6 +7,13 @@ nav_order: 3
 date: 2023-09-28
 math: mathjax
 ---
+TL;DR; (OpenAI API, github actions 기반 자동 요약문)
+***
+- Collaborative Filtering (CF)은 다른 사용자의 평가를 기반으로 추천을 하는 방식이다.
+- Scikit-learn의 TruncatedSVD와 Surprise의 SVD 알고리즘은 SVD를 기반으로한 모델이다.
+- CF 연구는 matrix factorization에 기반한 CF 연구가 활발해졌으며, 사용자와 아이템의 잠재 특징을 배우는 방식이다.
+***
+
 
 - 구글링하면서 CF란 거대한 흐름을 간단히 탐색해봤고, CF의 대표적인 논문을 읽고 파이썬으로 직접 구현해보고자 한다.
 - 사실 가벼운 흥미로 시작한 공부라 논문까지는 생각없었는데, 구글링으로 찾은 포스트의 설명과 예제는 한계를 많이 느껴서(이해 안되는 부분이 많았음) 오히려 흥미가 떨어질 것 같았다.
