@@ -68,7 +68,7 @@ TL;DR; (OpenAI API, github actions 기반 자동 요약문)
 - Memory-based CF 등장 (당시엔 이런 이름 없었음. 단순히 NN 알고리즘에 기반)
 - NN 알고리즘을 대체할 latent factor model based CF이 나옴
 - Latent factor model의 여러 기법 중 matrix factorization methods이 대표적임
-    - $$ \hat_{r}_{ui} = q_i^T p_u $$
+    - $$ \hat{r}_{ui} = q_i^T p_u $$
 - Matrix factorization methods의 여러 기법 중 singular value decomposition에 기반한 방법이 나옴
 - Conventional SVD에 기반한 학습 알고리즘 한계: sparse matrix(+ imputation도 불완전), overfitting
     - 그냥 imputation 없이, 정규화만 반영함
@@ -109,10 +109,10 @@ TL;DR; (OpenAI API, github actions 기반 자동 요약문)
 - Mean matrix ($$ \mu $$)를 왜 빼는건가 궁금했었고, 스터디에서 사용자의 편향을 다루기 위한 장치라는 피드백을 받았는데, 논문에 이를 더 자세하게 설명함. 이해한대로 정리해보면,
     - bias를 고려해야 하는 이유는 결국, 평가는 주관적일 수 밖에 없고, 그걸 수치화한 값 역시 사용자의 편향이 있음. 이러한 편향을 고려하지 않고 CF를 적용한다면, 대체로 평점이 높은 특정 아이템 군만 추천이 되거나, 대체로 높은 평점을 주는 특정 유저 그룹의 선택만이 추천될 수 있음. 그럼 편향을 모델에 어떻게 반영하고, 어떻게 측정할 것인지?
     - 임의의 유저 $$ u $$가 임의의 아이템 $$ i $$에 대해 매긴 평가가 $$ r_{ui} $$이라고 할 때, 이 평가에 포함된 bias를 $$ b_{ui} $$ 라고 함
-    - $$ \hat_{r}_{ui} = b_{ui} + q_i^T p_u $$로 위 식이 확장됨
+    - $$ \hat{r}_{ui} = b_{ui} + q_i^T p_u $$로 위 식이 확장됨
     - 논문에서는 가장 기본적인 first order approxiamte을 통해 $$ b_{ui} = \mu + b_u + b_i $$로 정의함
-    - $$ \hat_{r}_{ui} = \mu + b_u + b_i + q_i^T p_u $$로 정의할 수 있음
-    - 이걸 최적화 문제에 적용하면, $$ \min_{q*,p*,b*} \sum_{(u,i) \in \kappa} (r_{ui} - (\mu + b_u + b_i + q_i^T p_u))^2 + \lambda (||q_i||^2 + ||p_u||^2 + b_u^2 + b_i^2) $$
+    - $$ \hat{r}_{ui} = \mu + b_u + b_i + q_i^T p_u $$로 정의할 수 있음
+    - $$ \min_{q*,p*,b*} \sum_{(u,i) \in \kappa} (r_{ui} - (\mu + b_u + b_i + q_i^T p_u))^2 + \lambda (||q_i||^2 + ||p_u||^2 + b_u^2 + b_i^2) $$
     - bias는 intercepts와 비슷한 위치인 것 같음
 - Bias 외 overfitting을 완화하기 위한 정규화 장치, implicit data(ex. user click rate 등)를 반영한 모델, temporal dynamics라는 시간에 따른 유저 선호도 변화까지 반영한 모델을 다루는게 인상 깊음
     - 논문에서 말하는 implicit data가 결국 우리가 배포하려는 서비스의 input data 형태가 될 것 같다. 논문에선 implicit data를 추가해서 예측을 보완하지만, 우리는 implicit data만으로 예측을 해야함
