@@ -10,6 +10,13 @@ math: mathjax
 TL;DR; (OpenAI API, github actions 기반 자동 요약문)
 ***
 - Collaborative Filtering (CF)은 다른 사용자의 평가를 기반으로 추천을 하는 방식이다.
+- CF 연구는 matrix factorization에 기반한 CF 연구가 활발히 진행되고 있다.
+- Funk SVD 기반의 CF 모델을 파이썬으로 구현하고 학습 및 평가하는 방법을 알아보았다.
+***
+
+TL;DR; (OpenAI API, github actions 기반 자동 요약문)
+***
+- Collaborative Filtering (CF)은 다른 사용자의 평가를 기반으로 추천을 하는 방식이다.
 - Scikit-learn의 TruncatedSVD와 Surprise의 SVD 알고리즘은 SVD를 기반으로한 모델이다.
 - CF 연구는 matrix factorization에 기반한 CF 연구가 활발해졌으며, 사용자와 아이템의 잠재 특징을 배우는 방식이다.
 ***
