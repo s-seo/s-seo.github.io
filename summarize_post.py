@@ -8,7 +8,12 @@ def summarize_file(file_path):
     with open(file_path, 'r') as f:
         post_content = f.read()
 
-    response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': post_content[:4000]})
+    summarized_contents = []
+    for i in range(0, len(post_content), length = 4000):
+        response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': post_content[i:i + length]})
+        summarized_contents.append(response.json()['summary'])
+    
+    response = requests.post('http://43.201.66.120:8000/summarize', json = {'text': '\n'.join(summarized_contents)})
     summarized_content = response.json()['summary']
 
     front_matter, main_content = post_content.split('\n---')
@@ -16,7 +21,7 @@ def summarize_file(file_path):
     with open(file_path, 'w') as f:
         f.write(front_matter)
         f.write("\n---\n")
-        f.write('TL;DR;')
+        f.write('TL;DR; (OpenAI API, github actions 기반 자동 요약문)')
         f.write('\n***\n')
         f.write(summarized_content)
         f.write('\n***\n')
