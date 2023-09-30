@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "CF 모델"
+title:  "Collaborative Filtering"
 parent: Study
 permalink: /study/CollaborativeFiltering/
 nav_order: 3
@@ -138,6 +138,5 @@ math: mathjax
     - 실시간에선 MAB(Multi-armed bandit)를 많이씀. 빠르다는 특징
 - 모델 재학습 주기? 모델 학습시키는데걸리는 시간 (ex. 4시간)
 - 필터 버블
-
 
 
