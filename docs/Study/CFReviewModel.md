@@ -150,7 +150,14 @@ TL;DR; (OpenAI API, github actions 기반 자동 요약문)
 - 보완
     - 추천 결과는 받을 수 있는데 이걸 장고 페이지에 어떻게 띄울지? (+ post method로 유저가 입력한 값 받는 상황도 반영해야)
     - 모델 성능 평가 메서드 추가 (이걸 실시간 서비스에서 어떻게 활용하는건지도)
+        - mse?
+        - CTR / CVR / Diversity가 가장 흔하지 않을까 싶습니다!
     - 만약 같은 유저가 여러번 페이지 접근하는 경우, 매번 다른 추천 결과를 띄워주는 방향?
+        - multi-armed bandit
     - 유저의 선호는 시간에 따라 변할 수 있음. 이런 temporal dynamics를 반영한 모델
         - 필요할까?
     - 기존 유저가 본 영화가 추가되는 경우
+
+선호의 시간변화 이슈가 있는 경우 Sequential model이 잘 작동한다고 논문에서 주장하는 것 같더라구요.
+
+Collaborative Filtering for Implicit Feedback Datasets
