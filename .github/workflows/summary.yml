@@ -22,7 +22,7 @@ jobs:
     - name: Get list of changed files
       id: getfile
       run: |
-        files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
+        files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | tr '\n' ',')
         echo "files=$files" >> $GITHUB_ENV
     - name: Run summarization script
       run: python summarize_post.py ${{ env.files }}
