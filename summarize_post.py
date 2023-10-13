@@ -33,8 +33,8 @@ def summarize_file(file_path):
     #     print(f.read())
 
 if __name__ == "__main__":
-    # changed_files = sys.argv[1].split()
-    changed_files = ['docs/Study/CFReviewModel.md']
+    changed_files = sys.argv[1].split()
+    # changed_files = ['docs/Study/CFReviewModel.md']
     print(changed_files)
     for file in changed_files:
         if file.endswith('.md') and 'docs/' in file:
