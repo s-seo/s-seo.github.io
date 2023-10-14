@@ -19,14 +19,17 @@ def summarize_file(file_path):
 
     front_matter, main_content = post_content.split('\n---')
 
+    if 'TL;DR;' in main_content:
+        summary_content, main_content = main_content.split('{: .fs-4 .ls-7 .bg-grey-lt-300 .text-grey-dk-300 .code-example }')
+
     with open(file_path, 'w') as f:
         f.write(front_matter)
-        f.write("\n---\n")
-        f.write('TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*')
+        f.write("\n---\n\n")
+        f.write('### TL;DR;')
         f.write('\n')
         f.write(summarized_content)
         f.write('\n')
-        f.write('{: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }')
+        f.write('{: .fs-4 .ls-7 .bg-grey-lt-300 .text-grey-dk-300 .code-example }')
         f.write('\n')
         f.write(main_content)
 

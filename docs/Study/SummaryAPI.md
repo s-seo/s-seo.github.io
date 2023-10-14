@@ -13,7 +13,6 @@ TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*
 {: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }
 
 
-
 ## 사이드 프로젝트 배경
 
 - 내 블로그 포스트 대부분이 긴 흐름이라 누군가 글을 읽는다면 피로를 많이 느끼지 않을까 싶음
