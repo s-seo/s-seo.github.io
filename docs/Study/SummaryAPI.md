@@ -6,6 +6,13 @@ permalink: /study/SummaryAPI/
 nav_order: 3
 date: 2023-10-11
 ---
+TL;DR; (OpenAI API, github actions 기반 자동 요약문)
+***
+- 사이드 프로젝트로 OpenAPI 기반 깃헙 블로그 포스트 요약 서비스를 구축함
+- OpenAI API를 사용하여 요약 기능을 구현하고, FastAPI를 이용하여 요약 서비스 API를 개발함
+- API 개념을 명확히 이해하고 경험을 통해 스크립트 관리와 배치 작업을 자동화하는 방법을 학습함
+***
+
 
 
 
