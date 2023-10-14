@@ -21,11 +21,12 @@ def summarize_file(file_path):
     
     with open(file_path, 'w') as f:
         f.write(front_matter)
-        f.write("\n---\n")
-        f.write('TL;DR; (OpenAI API, github actions 기반 자동 요약문)')
-        f.write('\n***\n')
+        f.write("\n")
+        f.write('TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*')
+        f.write('\n')
         f.write(summarized_content)
-        f.write('\n***\n')
+        f.write('\n')
+        f.write('{: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }')
         f.write(main_content)
 
     # with open(file_path, 'r') as f:
