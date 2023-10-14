@@ -20,7 +20,7 @@ def summarize_file(file_path):
     front_matter, main_content = post_content.split('\n---')
 
     if 'TL;DR;' in main_content:
-        summary_content, main_content = main_content.split('{: .fs-4 .ls-7 .bg-grey-lt-300 .text-grey-dk-300 .code-example }')
+        summary_content, main_content = main_content.split('.code-example }')
 
     with open(file_path, 'w') as f:
         f.write(front_matter)
