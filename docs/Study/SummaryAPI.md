@@ -5,11 +5,7 @@ parent: Study
 permalink: /study/SummaryAPI/
 nav_order: 3
 date: 2023-10-11
-TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*
-- OpenAI API를 사용하여 텍스트 요약 서비스 개발 준비
-- FastAPI 기반의 API 개발 및 AWS EC2 인스턴스에 배포하여 환경 구축
-- API는 텍스트를 입력받아 요약본을 생성하고 반환하는 기능 제공
-{: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }
+---
 
 
 ## 사이드 프로젝트 배경
