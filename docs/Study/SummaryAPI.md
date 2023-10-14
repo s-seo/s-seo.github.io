@@ -6,6 +6,12 @@ permalink: /study/SummaryAPI/
 nav_order: 3
 date: 2023-10-11
 ---
+TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*
+- 개발자는 자동 요약 서비스를 블로그 포스트에 적용하고자 한다.
+- FastAPI를 사용하여 요약 서비스 API를 개발하였으며, AWS EC2 인스턴스에 배포하였다.
+- 프로젝트의 중점은 깃헙을 통해 코드를 원격 서버에 옮긴 후, 깃헙 액션 작업으로 자동 요약을 생성하고 업데이트하는 것이었다.
+{: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }
+
 
 
 ## 사이드 프로젝트 배경
