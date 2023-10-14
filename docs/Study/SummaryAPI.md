@@ -5,7 +5,11 @@ parent: Study
 permalink: /study/SummaryAPI/
 nav_order: 3
 date: 2023-10-11
----
+TL;DR; *(OpenAI API, github actions 기반 자동 요약문)*
+- 개발환경 구축: OpenAI API와 FastAPI를 사용하여 깃헙 블로그 포스트 요약 서비스를 구축하고, API 개발을 위해 AWS EC2 인스턴스에 배포
+- 서버 접근 문제 해결: EC2 서버 접근을 위해 퍼미션 문제를 해결하기 위해 'chmod 400 fc_chatgpt.pem' 명령어 실행
+- 깃헙 액션 작업: 코드를 작성하고 액션을 설정하여 md 파일을 필터링하고 API에 요약 요청 후 결과를 원래 파일에 붙여넣어 커밋, 푸시
+{: .fs-5 .ls-10 .bg-grey-lt-100 .text-grey-dk-300 .code-example }
 TL;DR; (OpenAI API, github actions 기반 자동 요약문)
 ***
 - 사이드 프로젝트로 OpenAPI 기반 깃헙 블로그 포스트 요약 서비스를 구축함
