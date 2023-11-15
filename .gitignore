@@ -6,3 +6,5 @@
 _site
 Gemfile.lock
 node_modules
+summary.yml
+summarize_post.py
