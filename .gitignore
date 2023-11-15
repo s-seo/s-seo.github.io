@@ -6,5 +6,5 @@
 _site
 Gemfile.lock
 node_modules
-summary.yml
+.github/workflows/summary.yml
 summarize_post.py
