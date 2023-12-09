@@ -108,7 +108,7 @@ def post_summarize(input_text: InputText):
 
 - AWS 계정 만듦
 
-![](https://s-seo.github.io/assets/images/post_summaryapi_2.png){: width="600" height="400"}
+![](https://s-seo.github.io/assets/images/post_summaryapi_2.png){: width="1000" height="800"}
 
 - ECS 대시보드 -> EC2 인스턴스 생성하면 위와 같은 화면 나타남
     - 인스턴스 시작 전 리전을 서울로 변경 (우측 상단)
@@ -161,7 +161,7 @@ def post_summarize(input_text: InputText):
 - 먼저 깃헙 액션이란? 소프트웨어 개발 시 필요한 워크플로우가 있을텐데(예를들어 코드 커밋 시 자동으로 빌드, 테스트하고 통과하면 클라우드 서비스에 자동으로 배포까지 하는 것) 이걸 자동화하는데 사용하는 일종의 플랫폼
 - 이 기능을 사용해 내 블로그 포스팅을 커밋할 때 자동으로 요약본을 붙이는 워크플로우를 자동화시킬 계획
 
-![](https://s-seo.github.io/assets/images/post_summaryapi_3.png){: width="600" height="400"}
+![](https://s-seo.github.io/assets/images/post_summaryapi_3.png){: width="1000" height="800"}
 
 내가 워크플로우를 만들면 위와 같은 UI로 실시간 확인할 수 있다.
 
