@@ -3,7 +3,6 @@ layout: default
 title:  "통계 101 x 데이터 분석"
 parent: Book
 permalink: /book/Statistics101/
-nav_order: 3
 date: 2023-07-28
 ---
 

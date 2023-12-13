@@ -3,7 +3,6 @@ layout: default
 title:  "린 분석"
 parent: Book
 permalink: /book/LeanAnalytics/
-nav_order: 3
 date: 2023-08-08
 ---
 

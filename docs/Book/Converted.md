@@ -3,7 +3,6 @@ layout: default
 title:  "컨버티드"
 parent: Book
 permalink: /book/Converted/
-nav_order: 3
 date: 2023-06-20
 ---
 

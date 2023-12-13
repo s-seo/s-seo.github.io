@@ -3,7 +3,6 @@ layout: default
 title:  "프로덕트 오너"
 parent: Book
 permalink: /book/ProductOwner/
-nav_order: 3
 date: 2023-09-14
 ---
 

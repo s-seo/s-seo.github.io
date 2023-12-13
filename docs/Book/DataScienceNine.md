@@ -3,7 +3,6 @@ layout: default
 title:  "데이터 과학자 원칙"
 parent: Book
 permalink: /book/DataScienceNine/
-nav_order: 3
 date: 2023-07-27
 ---
 

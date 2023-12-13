@@ -3,7 +3,6 @@ layout: default
 title:  "SQL 레벨업"
 parent: Book
 permalink: /book/SQLLevelUp/
-nav_order: 3
 date: 2023-09-26
 ---
 
