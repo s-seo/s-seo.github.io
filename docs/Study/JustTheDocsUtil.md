@@ -158,3 +158,29 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 A paragraph
 {: .fs-3 .ls-10 .bg-grey-lt-200 .text-grey-dk-300 .note }
 ```
+
+
+***
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+{: .fs-5 .ls-10 .code-example }
+
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz dddddd
+{: .fs-5 .ls-10 .bg-grey-dk-000 .text-grey-dk-300 .code-example }
+
+A paragraph
+{: .fs-3 .ls-10 .bg-grey-lt-200 .text-grey-dk-300 .note }
+
+```markdown
+{: .note }
+A paragraph
+```
+
+
+테마 수정 방법 (크롬 기준)
+
+F12 -> inspect -> 우측 Styles에 마우스 오버 -> 온오프 토글이 있어 눈으로 확인 후 해당 파일, 라인에 가서 수정하면 됨 
+

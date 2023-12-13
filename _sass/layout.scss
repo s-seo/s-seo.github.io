@@ -15,7 +15,7 @@
     height: 100%;
     flex-direction: column;
     border-right: $border $border-color;
-    // align-items: flex-end;
+    align-items: flex-end;
   }
 
   @include mq(lg) {
@@ -110,6 +110,7 @@
     height: $header-height;
     max-height: $header-height;
     border-bottom: $border $border-color;
+    display: flex;
   }
 }
 
@@ -147,6 +148,7 @@
   height: 100%;
   padding: $gutter-spacing-sm;
   align-items: center;
+  color: $smseo_grey_4;
 }
 
 @include mq(md) {

@@ -72,7 +72,7 @@
       padding-right: #{$nav-list-item-height-sm / 4};
       padding-bottom: #{$nav-list-item-height-sm / 4};
       padding-left: #{$nav-list-item-height-sm / 4};
-      color: $link-color;
+      color: $smseo_grey_4;
 
       @include mq(md) {
         width: $nav-list-item-height;
