@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Mindscapes
+title: Rambling
 # nav_order: 1
 has_children: true
-permalink: docs/mindscapes
+permalink: docs/rambling
 ---

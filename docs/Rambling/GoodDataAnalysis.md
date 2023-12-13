@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "좋은 데이터 분석이란"
-parent: Mindscapes
-permalink: /mindscapes/GoodDataAnalysis/
+parent: Rambling
+permalink: /rambling/GoodDataAnalysis/
 # nav_order: 97
 ---
 

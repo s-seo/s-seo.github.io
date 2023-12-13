@@ -1,19 +1,17 @@
-//
 // Base element style overrides
-//
-// stylelint-disable selector-no-type, selector-max-type
+// stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
+
+:root {
+  color-scheme: $color-scheme;
+}
 
 * {
   box-sizing: border-box;
 }
 
-::selection {
-  color: $white;
-  background: $link-color;
-}
-
 html {
   @include fs-4;
+
   scroll-behavior: smooth;
 }
 
@@ -23,6 +21,7 @@ body {
   line-height: $body-line-height;
   color: $body-text-color;
   background-color: $body-background-color;
+  overflow-wrap: break-word;
 }
 
 ol,
@@ -45,7 +44,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+#toctitle {
   margin-top: 0;
   margin-bottom: 1em;
   font-weight: 500;
@@ -58,34 +58,18 @@ p {
   margin-bottom: 1em;
 }
 
-.main-content a {
-  color: $link-color; // 이 변수는 SCSS 파일 상단에 정의되어 있어야 합니다.
-  text-decoration: underline; // 하이퍼링크에 밑줄을 적용하려면 이 속성을 사용하세요.
-  
-  &:hover {
-    color: darken($link-color, 10%); // 호버 시 색상을 어둡게 조정합니다.
-    text-decoration: none; // 호버 시 밑줄을 제거하려면 이 속성을 사용하세요.
-  }
-}
-
 a {
-  color: $smseo_grey_2;
+  color: $link-color;
   text-decoration: none;
 }
 
 a:not([class]) {
-  text-decoration: none;
-  background-image: linear-gradient($border-color 0%, $border-color 100%);
-  background-repeat: repeat-x;
-  background-position: 0 100%;
-  background-size: 1px 1px;
+  text-decoration: underline;
+  text-decoration-color: $border-color;
+  text-underline-offset: 2px;
 
   &:hover {
-    background-image: linear-gradient(
-      rgba($link-color, 0.45) 0%,
-      rgba($link-color, 0.45) 100%
-    );
-    background-size: 1px 1px;
+    text-decoration-color: rgba($link-color, 0.45);
   }
 }
 
@@ -115,4 +99,27 @@ hr {
   margin: $sp-6 0;
   background-color: $border-color;
   border: 0;
+}
+
+// adds a GitHub-style sidebar to blockquotes
+blockquote {
+  margin: 10px 0;
+
+  // resets user-agent stylesheets for blockquotes
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  padding-left: 1rem;
+  border-left: 3px solid $border-color;
+}
+
+// custom
+
+.main-content a {
+  color: $main-link-color;
+  text-decoration: underline;
+  
+  &:hover {
+    color: darken($link-color, 10%);
+    text-decoration: none;
+  }
 }
