@@ -1,9 +1,8 @@
 ---
 layout: default
-title:  "Data Science and Agile"
+title:  "[컬럼] Data Science and Agile"
 parent: Study
 permalink: /study/AgileDataScience/
-nav_order: 3
 date: 2023-07-11
 ---
 

@@ -5,7 +5,7 @@
 .side-bar {
   z-index: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: $grey-lt-300;
 
   @include mq(md) {
@@ -22,7 +22,7 @@
     // width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
     // width: 14%;
     min-width: $nav-width;
-    margin-left: 14%;
+    // margin-left: 14%;
   }
 }
 

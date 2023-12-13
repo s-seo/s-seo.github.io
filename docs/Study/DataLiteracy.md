@@ -3,7 +3,6 @@ layout: default
 title:  "[강의] Data Literacy for PM"
 parent: Study
 permalink: /study/DataLiteracy/
-# nav_order: 97
 ---
 
 
