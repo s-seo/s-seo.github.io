@@ -4,7 +4,6 @@
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
 
   @include mq(md) {
     flex-flow: column nowrap;
@@ -16,7 +15,7 @@
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    width: calc((100% - #{$content-width}) / 2);
     min-width: $nav-width;
   }
 }
@@ -24,8 +23,8 @@
 .main {
   @include mq(md) {
     position: relative;
-    max-width: $content-width;
     margin-left: $nav-width-md;
+    max-width: $content-width;
   }
 
   @include mq(lg) {
@@ -33,8 +32,9 @@
     // disable for Max(), we want to use the CSS max() function
     margin-left: Max(
       #{$nav-width},
-      calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+      calc((100% - #{$content-width}) / 2)
     );
+    min-width: $content-width + $nav-width;
     // stylelint-enable function-name-case
   }
 }
@@ -77,9 +77,10 @@
 .site-header,
 .site-footer {
   width: 100%;
-
+  background-color: $nav-color;
+  
   @include mq(lg) {
-    width: $nav-width;
+    width: $nav-width*1.3;
   }
 }
 
@@ -122,10 +123,15 @@
   padding-bottom: $sp-3;
   color: $body-heading-color;
   @include fs-6;
+  font-weight: 700;
 
   @include mq(md) {
     padding-top: $sp-2;
     padding-bottom: $sp-2;
+  }
+
+  @include mq(lg) {
+    justify-content: center;
   }
 }
 

@@ -1,81 +1,12 @@
 ---
 layout: default
-title:  "[Github Page][JTD] Layout Custom"
+title:  "[Github Page][JTD] Custom"
 parent: Study
-permalink: /study/JustTheDocsLayout
+permalink: /study/JustTheDocsCustom
 last_edit_time_format: 2022-08-22 13:01:01
 ---
 
 Just The Docs(JTD) 테마가 search 기능도 있고, 여러모로 UI가 깔끔해서 적용했지만, 좁은 width가 맘에 들지 않아 직접 css 파일을 수정했고, 이를 포함해 몇가지 customizing한 내용을 기록한다.
-
-## layout.scss
-
-각 클래스에 어떤 것을 지웠고(주석 처리), 추가했는지 주석으로 설명함
-
-```
-.side-bar {
-  z-index: 0;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $sidebar-color;
-
-  @include mq(md) {
-    flex-wrap: nowrap;
-    position: fixed;
-    width: $nav-width-md;
-    height: 100%;
-    flex-direction: column;
-    border-right: $border $border-color;
-    // align-items: flex-end; // 사이드바에 있는 항목을 임의로 정렬시키지 않고, default(여기선 중앙 정렬)로 설정
-  }
-
-  @include mq(lg) {
-    // width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}); 
-    width: 14%; // 사이드바의 width를 직접 값 지정하여 조정
-    min-width: $nav-width;
-    margin-left: 14%; // 사이드바가 너무 왼쪽에 붙어 있는 것도 눈이 피로하기 때문에 어느정도 떨어지게 만듦
-  }
-}
-```
-
-```
-.main {
-  @include mq(md) {
-    position: relative;
-    // max-width: $content-width; // 이걸 지움으로써 width를 default(전체 화면 넓이)로 조정
-    margin-right: 14%; // 전체 화면 넓이로 조정하되, 우측, 좌측에 margin 부여
-    margin-left: $nav-width-md;
-  }
-
-  @include mq(lg) {
-    // margin-left: calc(
-    //   (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
-    // );
-    margin-left: 28%;
-  }
-}
-```
-
-
-```
-.site-title {
-  @include container;
-  flex-grow: 1;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  padding-top: $sp-3;
-  padding-bottom: $sp-3;
-  // color: $body-heading-color; // 기본 색깔이 너무 옅어 지우고 아래 굵기 및 사이즈 변경
-  font-weight: 700;
-  @include fs-5;
-
-  @include mq(md) {
-    padding-top: $sp-2;
-    padding-bottom: $sp-2;
-  }
-}
-```
 
 ## custom.scss
 
@@ -107,7 +38,7 @@ jekyll/builder:latest /bin/bash -c "gem install bundler:2.1.4 && chmod -R 777 /s
 
 - title 등 초반 정보는 알아서
 
-![](https://s-seo.github.io/assets/images/post_justthedocslayout_1.png){: width="1000" height="800"}
+![](https://s-seo.github.io/assets/images/post_justthedocslayout_1.png){: width="1000" height="800" .image-border}
 
 - 위 화면의 빨간 박스를 수정
 - 우측 상단의 박스는 config의 aux_links 부분. 적당한 이름과 링크 입력
@@ -119,7 +50,7 @@ jekyll/builder:latest /bin/bash -c "gem install bundler:2.1.4 && chmod -R 777 /s
 
 ### 색깔 변경
 
-![](https://s-seo.github.io/assets/images/post_justthedocslayout_2.png){: width="1000" height="800"}
+![](https://s-seo.github.io/assets/images/post_justthedocslayout_2.png){: width="1000" height="800" .image-border}
 
 - 사이드바 (화면 좌측) 색깔
   - -> _sass/support/_variables.scss 에 `$sidebar-color: $grey-lt-100 !default;` 추가
@@ -140,13 +71,76 @@ jekyll/builder:latest /bin/bash -c "gem install bundler:2.1.4 && chmod -R 777 /s
     ```
 - 가끔 아래와 같이 모바일 버전으로도 확인해주자 (F12 -> 좌측 상단 Toggle device tool bar 클릭)
 
-![](https://s-seo.github.io/assets/images/post_justthedocslayout_3.png){: width="600" height="400"}
+![](https://s-seo.github.io/assets/images/post_justthedocslayout_3.png){: width="300" height="200" .image-border}
+
+- 만약 side-bar가 아닌 navigation-bar 색만 변경하고 싶다면,
+  - .side-bar 클래스가 아닌 .site-nav, header, footer 클래스에 스타일 적용하는 부분(세 클래스 한번에 적용하는 스타일 부분 있음)에 `background-color: ${color-you-want};` 추가하면 됨
 
 ### 사이드바 길이, 여백 조정
 
-![](https://s-seo.github.io/assets/images/post_justthedocslayout_4.png){: width="1000" height="800"}
+![](https://s-seo.github.io/assets/images/post_justthedocslayout_6.png){: width="1000" height="800" .image-border}
 
 - 블로그를 위와 같이 넓게 보고 싶으면
-  - 
+  - ```css
+    .side-bar {
+      ...
+      @include mq(lg) {
+        width: calc((100% - #{$content-width}) / 2);
+        ...
+      }
+    }
+
+    .main {
+      ...
+      @include mq(lg) {
+        ...
+        min-width: $content-width + $nav-width;
+      }
+    }
+  
+    .site-nav,
+    .site-header,
+    .site-footer {
+      ...
+      @include mq(lg) {
+        width: $nav-width*1.3;
+      }
+    }
+  ```
 
 
+### 사진 크기 조정, 테두리 부여
+
+- _sass/custom/custom.scss 에 아래 추가
+
+```css
+.image-border {
+  display: block;
+  margin: auto; // 이미지를 중앙에 배치하려면 사용
+  border: 1px solid #000; // 테두리 설정, 여기서는 검은색 1픽셀 테두리
+}
+```
+
+- 아래와 같이 로드하면 됨
+
+`![](){: width="1000" height="800" .image-border}`
+
+
+### 사이트 타이블 (smseo blog) 스타일 변경
+
+- 내 블로그 타이틀을 좀 더 굵게 표시하고, 박스의 정중앙에 위치하고 싶다
+- 모바일에선 타이틀이 교차축에선 중앙, 주축에선 왼쪽 정렬되게 하고 싶다. 안그럼 아래와 같이 살짝 부자연스러움
+
+![](https://s-seo.github.io/assets/images/post_justthedocslayout_5.png){: width="300" height="200" .image-border}
+
+
+```css
+.site-title {
+  ...
+  font-weight: 700;
+  ...
+  @include mq(lg) {
+    justify-content: center;
+  }
+}
+```

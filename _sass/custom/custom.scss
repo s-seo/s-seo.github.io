@@ -1,1 +1,6 @@
 // custom SCSS (or CSS) goes here
+.image-border {
+    display: block;
+    margin: auto; // 이미지를 중앙에 배치하려면 사용
+    border: 1px solid #000; // 테두리 설정, 여기서는 검은색 1픽셀 테두리
+  }
