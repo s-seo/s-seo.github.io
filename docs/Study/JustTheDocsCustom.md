@@ -3,7 +3,7 @@ layout: default
 title:  "[Github Page][JTD] Custom"
 parent: Study
 permalink: /study/JustTheDocsCustom
-last_edit_time_format: 2022-08-22 13:01:01
+last_edit_time_format: 2023-12-14
 ---
 
 Just The Docs(JTD) 테마가 search 기능도 있고, 여러모로 UI가 깔끔해서 적용했지만, 좁은 width가 맘에 들지 않아 직접 css 파일을 수정했고, 이를 포함해 몇가지 customizing한 내용을 기록한다.
