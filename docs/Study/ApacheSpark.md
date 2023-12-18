@@ -3,7 +3,8 @@ layout: default
 title:  "[Misc.] Apache Spark"
 parent: Study
 permalink: /study/ApacheSpark/
-# nav_order: 97
+date: 2022-07-18
+last_modified_date: 2023-12-18
 ---
 
 ***

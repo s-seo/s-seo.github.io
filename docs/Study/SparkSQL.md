@@ -3,7 +3,7 @@ layout: default
 title:  "[SQL] Spark SQL 최적화"
 parent: Study
 permalink: /study/sparksql/
-# date: 2023-12-13
+date: 2023-12-19
 last_modified_date: 2023-12-19
 ---
 

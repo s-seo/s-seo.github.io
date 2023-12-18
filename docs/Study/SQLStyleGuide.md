@@ -3,7 +3,7 @@ layout: default
 title:  "[SQL] SQL Style Guide"
 parent: Study
 permalink: /study/sqlstyleguide/
-# date: 2023-12-13
+date: 2023-12-18
 last_modified_date: 2023-12-18
 ---
 

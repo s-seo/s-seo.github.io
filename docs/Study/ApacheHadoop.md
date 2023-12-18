@@ -3,7 +3,8 @@ layout: default
 title:  "[Misc.] Apache Hadoop"
 parent: Study
 permalink: /study/ApacheHadoop/
-# nav_order: 97
+date: 2022-06-18
+last_modified_date: 2023-12-18
 ---
 
 ***
