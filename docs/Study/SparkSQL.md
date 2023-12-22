@@ -277,13 +277,13 @@ spark.read.table('pubg_mart.gcoin_topup')\
 
 ### 1. 필요한 열만 SELECT 하기
 
-![](https://s-seo.github.io/assets/images/post_sparksql_1.png){: width="1000" height="800" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_1.png){: width="500" height="300" .image-border}
 
 - 이건 위의 실행계획에서도 알 수 있듯이 FileScan 단계에서부터 가져오는 열에 차이가 있음
 
 ### 2. WHERE 구 등 조건을 걸 때 되도록 연산 하지 않기
 
-![](https://s-seo.github.io/assets/images/post_sparksql_2.png){: width="1000" height="800" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_2.png){: width="500" height="300" .image-border}
 
 - 실행 계획을 보면 DataFilters, PushedFilters가 각각 아래와 같음
     - 연산 들어간 쿼리
@@ -296,7 +296,7 @@ spark.read.table('pubg_mart.gcoin_topup')\
 
 ### 3. LIKE 사용시 와일드카드 문자열(%)을 String 앞뒤에 배치하지 않기
 
-![](https://s-seo.github.io/assets/images/post_sparksql_3.png){: width="1000" height="800" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_3.png){: width="500" height="300" .image-border}
 
 - 실행 계획에서 차이는 
     - 앞 뒤 다한 쿼리는
@@ -314,7 +314,7 @@ spark.read.table('pubg_mart.gcoin_topup')\
 
 ### 4. 조건 구에서의 순서는 상관 **있다**
 
-![](https://s-seo.github.io/assets/images/post_sparksql_4.png){: width="1000" height="800" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_4.png){: width="500" height="300" .image-border}
 
 - 이건 정말 의외의 결과였다...!
 - 예를 들어 `product_id LIKE 'pass%' AND platform = 'STEAM'`와 `platform = 'STEAM' AND product_id LIKE 'pass%'`로 조건을 걸 때 차이가 남
