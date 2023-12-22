@@ -36,7 +36,7 @@ last_modified_date: 2023-12-22
 
 ### 1. RDD (Resilient Distributed Dataset)
 
-- Spark의 근본(?) 추상화라고 함.
+- Spark의 근본 추상화라고 함.
 - 저수준 API라서 사용자가 더 많은 영역을 세밀하게 제어할 수 있음 (Java, C와 같은 결)
 - 그 외 오류 발생 시 복구 가능하고, 파티셔닝과 분산 처리에 유용하지만 스키마 추론, 최적화 등을 제공하진 않음
 
@@ -45,7 +45,7 @@ last_modified_date: 2023-12-22
 - Spark의 고수준 API에 속함
 - 열과 행으로 이루어진 표 형태의 데이터 구조를 제공함. 우리가 흔히 아는 테이블 구조라 표준화 되어 있다고 표현하는데, 이 표준화된 구조로 인해 다양한 데이터 타입을 쉽게 처리하고, 데이터 분석 및 처리 과정을 간소화할 수 있음
 - RDD와 달리 데이터를 최적화된 방식으로 저장함. 이 때 사용되는 엔진이 Tungsten
-- DataFrame API에서는 functions라는 모듈(?)로 여러 전처리 함수를 지원함. 이 전처리 함수에 사용되는 최적화 엔진도 Catalyst라고 한다.
+- DataFrame API에서는 functions라는 모듈로 여러 전처리 함수를 지원함. 이 전처리 함수에 사용되는 최적화 엔진도 Catalyst라고 한다.
     - 앞에서 Spark SQL도 Catalyst인데 이 때문이라고는 할 수 없지만 결과적으로 DataFrame API와 Spark SQL 둘의 전처리 성능은 거의 동일하다고 함
 
 ### 3. Dataset
@@ -161,7 +161,7 @@ spark.sql("SELECT * FROM people WHERE age > 30").show()
     - 특히 Spark SQL 사용했는데 너무 많은 시간 걸리면 '아 DataFrame 사용해야 했나'라고 (잘 모르던 때에) 고민도 많이 했다
     - Spark SQL은 쿼리라는 선언형 프로그래밍인 반면, DataFrame API는 메소드 체인 방식이라는 절차형 프로그래밍이다. 사고 방식 자체가 다른 언어다. 근데 생각보다 (적어도 나는) 실무에서 이 둘을 혼합해서 많이 사용한다. 각 API마다 편한 메서드가 있다보니 자연스럽게 혼합시키고 있다.
 - 결론적으로는 **이 둘 사이의 성능 차이는 없으며, 시간이 오래 걸린다면 그만큼 데이터가 크다거나, 또는 내 쿼리가 비효율적이라는 것**
-    - 성능 차이가 없는 원인은 둘다 동일한 JVM 기반 Catalyst 엔진, Tungsten 엔진을 사용하기 때문 [https://velog.io/@datastsea/spark-sql-vs-dataframe-api](https://velog.io/@datastsea/spark-sql-vs-dataframe-api)
+    - 성능 차이가 없는 원인은 둘다 동일한 JVM 기반 Catalyst 엔진, Tungsten 엔진을 사용하기 때문 [(https://velog.io/@datastsea/spark-sql-vs-dataframe-api)](https://velog.io/@datastsea/spark-sql-vs-dataframe-api)
 
 
 ## Spark SQL 실행 계획 해석
@@ -185,7 +185,7 @@ df_filtered.explain()
 ```
 
 - 현재 회사에선 데이터브릭스를 사용하고 있는데, 직접 실행 계획을 출력해볼 수 있다. 아래 코드를 실행하면 바로 밑의 출력 결과가 나옴
-    - *문제가 될만한 값은 별(*)표 또는 삭제 처리 했습니다*
+    - *문제가 될만한 값은 별표 또는 삭제 처리 했습니다*
 
 ```python
 display(
@@ -234,7 +234,7 @@ Filter (((isnotnull(date#3618) AND isnotnull(platform#3620)) AND isnotnull(produ
 - 각 단계는 Spark의 Catalyst 최적화 엔진에 의해 결정된다고 함. 
 
 - 같은 쿼리를 DataFrame API로 해서 explain 메서드를 걸면 아래와 같이 나옴
-    - Physical Plan 만 출력된다는 점과, 각 필드 옆의 인덱스가 다름)
+    - Physical Plan 만 출력된다는 점과, 각 필드 옆의 인덱스가 다름
 
 ```python
 spark.read.table('pubg_mart.gcoin_topup')\
@@ -273,17 +273,19 @@ spark.read.table('pubg_mart.gcoin_topup')\
     - 캐싱: 자주 쓰는 DataFrame이라면 `.cache()` 메서드를 사용해 메모리에 올려놓고 캐시하면 쿼리 시간이 단축됨
     - 클러스터 리소스: 당연히 클러스터 메모리, 코어 수를 적절히 할당하면 성능이 올라감. 다만 이건 한계가 있는 상황임을 가정 (비용이 크니까)
     - 중간 쿼리 결과물 저장: 자주 사용해야 하거나, 너무 크기가 큰데 행마다 면밀히 살펴야 하는 테이블이라면 필요한 데이터만 모아 별도 저장 공간에 적재해서 다시 불러와 사용함
-- 쿼리 자체를 개선하는 방법도 여러가지 있다
+- 쿼리 자체를 개선하는 방법은 아래에 정리해봄
+    - 쿼리 실행 환경은 데이터브릭스 노트북
+    - 스파크 특성 상 처음 쿼리 시 걸리는 시간이 크다는 점을 감안해서, 모든 쿼리는 최소 5회 이상 실행시켜 비교했다.
 
 ### 1. 필요한 열만 SELECT 하기
 
-![](https://s-seo.github.io/assets/images/post_sparksql_1.png){: width="500" height="300" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_2.png){: width="500" height="300" .image-border}
 
 - 이건 위의 실행계획에서도 알 수 있듯이 FileScan 단계에서부터 가져오는 열에 차이가 있음
 
 ### 2. WHERE 구 등 조건을 걸 때 되도록 연산 하지 않기
 
-![](https://s-seo.github.io/assets/images/post_sparksql_2.png){: width="500" height="300" .image-border}
+![](https://s-seo.github.io/assets/images/post_sparksql_1.png){: width="500" height="300" .image-border}
 
 - 실행 계획을 보면 DataFilters, PushedFilters가 각각 아래와 같음
     - 연산 들어간 쿼리
@@ -310,8 +312,6 @@ spark.read.table('pubg_mart.gcoin_topup')\
 - 참고로 앞에만 적용해도 결과는 같음. `StartsWith`이 `EndsWith`으로 바뀔 뿐이다
 - *또 참고로 RDBMS SQL 에서는 약간 다르다. 앞부분에 배치하는 것이 비효율적이라고 함*
 
-### 6. 3개 이상의 테이블을 INNER JOIN 할 때는 크기가 큰 테이블을 FROM 구에 위치
-
 ### 4. 조건 구에서의 순서는 상관 **있다**
 
 ![](https://s-seo.github.io/assets/images/post_sparksql_4.png){: width="500" height="300" .image-border}
@@ -327,7 +327,6 @@ spark.read.table('pubg_mart.gcoin_topup')\
 ### [기타] GROUP BY 할 때 HAVING 이나 WHERE 이나 실행 계획에 있어 차이 없다
 
 - RDBMS 에선 WHERE이 HAVING 보다 시간이 덜 걸린다고 함
-
 
 
 ## 결론
