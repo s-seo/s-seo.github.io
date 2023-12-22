@@ -345,12 +345,11 @@ spark.read.table('pubg_mart.gcoin_topup')\
 {: .note-title}
 > 참조
 >
-> 
-> [도서] SQL 레벨업 : DB 성능 최적화를 위한 SQL 실전 가이드 / 미크
-> [https://dadk.tistory.com/74](https://dadk.tistory.com/74)
-> [https://kadensungbincho.tistory.com/87](https://kadensungbincho.tistory.com/87)
-> [https://velog.io/@datastsea/spark-sql-vs-dataframe-api](https://velog.io/@datastsea/spark-sql-vs-dataframe-api)
-> [https://medium.com/watcha/%EC%BF%BC%EB%A6%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%B2%AB%EA%B1%B8%EC%9D%8C-%EB%B3%B4%EB%8B%A4-%EB%B9%A0%EB%A5%B8-%EC%BF%BC%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-7%EA%B0%80%EC%A7%80-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-bafec9d2c073](https://medium.com/watcha/%EC%BF%BC%EB%A6%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%B2%AB%EA%B1%B8%EC%9D%8C-%EB%B3%B4%EB%8B%A4-%EB%B9%A0%EB%A5%B8-%EC%BF%BC%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-7%EA%B0%80%EC%A7%80-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-bafec9d2c073)
-> [도서] 스파크 완벽 가이드 / 빌 체임버스, 마테이 자하리아
+> - [도서] SQL 레벨업 : DB 성능 최적화를 위한 SQL 실전 가이드 / 미크
+> - [도서] 스파크 완벽 가이드 / 빌 체임버스, 마테이 자하리아
+> - [https://dadk.tistory.com/74](https://dadk.tistory.com/74)
+> - [https://kadensungbincho.tistory.com/87](https://kadensungbincho.tistory.com/87)
+> - [https://velog.io/@datastsea/spark-sql-vs-dataframe-api](https://velog.io/@datastsea/spark-sql-vs-dataframe-api)
+> - [https://medium.com/watcha/%EC%BF%BC%EB%A6%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%B2%AB%EA%B1%B8%EC%9D%8C-%EB%B3%B4%EB%8B%A4-%EB%B9%A0%EB%A5%B8-%EC%BF%BC%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-7%EA%B0%80%EC%A7%80-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-bafec9d2c073](https://medium.com/watcha/%EC%BF%BC%EB%A6%AC-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%B2%AB%EA%B1%B8%EC%9D%8C-%EB%B3%B4%EB%8B%A4-%EB%B9%A0%EB%A5%B8-%EC%BF%BC%EB%A6%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-7%EA%B0%80%EC%A7%80-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8-bafec9d2c073)
 
 
