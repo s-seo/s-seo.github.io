@@ -9,11 +9,6 @@ last_modified_date: 2024-02-02
 mathjax: true
 ---
 
-![출처:ㅇㅇㅇ](https://s-seo.github.io/assets/images/post_sparksql_4.png){: width="500" height="300" .image-border}
-
-
-[[SQL Style Guide]](https://s-seo.github.io/study/sqlstyleguide/)
-
 {: .important-title}
 > 글 쓴 배경
 >
@@ -40,7 +35,7 @@ mathjax: true
 
 ## Collaborative Filtering(CF)이란
 
-![](https://s-seo.github.io/assets/images/post_cfreviewmodel_1.png){: width="800" height="600" .image-border}
+![](https://s-seo.github.io/assets/images/post_cfreviewmodel_1.png){: width="600" height="400" .image-border}
 
 | [출처: Goldberg, D., Nichols, D., Oki, B. M., & Terry, D. (1992). *Using collaborative filtering to weave an information tapestry*](https://dl.acm.org/doi/10.1145/138859.138867)
 
