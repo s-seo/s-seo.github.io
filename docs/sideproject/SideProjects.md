@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Side Projects
+title: Projects
 # nav_order: 3
 has_children: true
-permalink: docs/sideprojects
+permalink: docs/projects
 ---
 
 # Side Projects

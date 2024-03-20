@@ -1,10 +1,11 @@
 ---
 layout: default
 title:  "OpenAPI 기반 깃헙 블로그 포스트 요약 서비스 구축기"
-parent: Side Projects
-permalink: /sideprojects/SummaryAPI/
+parent: Projects
+permalink: /projects/SummaryAPI/
 nav_order: 3
 date: 2023-10-11
+last_modified_date: 2023-10-11
 ---
 
 ### TL;DR;

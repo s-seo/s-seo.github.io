@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "[추천 서비스 프로젝트][1] Collaborative Filtering "
-parent: Side Projects
-permalink: /sideproject/cfinrealtimerec/
+parent: Projects
+permalink: /project/cfinrealtimerec/
 nav_order: 3
 date: 2023-09-28
 last_modified_date: 2024-02-02

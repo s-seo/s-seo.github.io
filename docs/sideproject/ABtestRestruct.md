@@ -1,9 +1,10 @@
 ---
 layout: default
 title:  "A/B test 재구성"
-parent: Side Projects
-permalink: /sideprojects/ABtestRestruct/
+parent: Projects
+permalink: /projects/ABtestRestruct/
 date: 2023-07-28
+last_modified_date: 2023-07-28
 ---
 
 ***

@@ -1,10 +1,10 @@
 ---
 layout: default
 title:  "Mac에서 개발환경 구축"
-parent: Side Projects
-permalink: /sideprojects/StartOnMac
-nav_order: 1
+parent: Projects
+permalink: /projects/StartOnMac
 date: 2022-08-22
+last_modified_date: 2022-08-22
 ---
 
 사이드 프로젝트를 진행하기 전, 정말 백지 상태의 노트북에서 각종 프로그래밍 툴을 설치하는 과정을 기록해서 나중에 새로운 기기에서 다시 시작할 때 참고하조자 함. 큰 관점에서 맥에서 하려는 것은 다음과 같다.
