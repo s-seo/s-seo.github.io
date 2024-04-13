@@ -4,6 +4,7 @@ title:  "[컬럼] Data Science and Agile"
 parent: Study
 permalink: /study/AgileDataScience/
 date: 2023-07-11
+last_modified_date: 2024-04-14
 ---
 
 ***
