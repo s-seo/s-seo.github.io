@@ -2,7 +2,7 @@
 layout: default
 title:  "ELK stack 구축기 (1) - Docker"
 parent: Projects
-permalink: /projects/SummaryAPI/
+permalink: /projects/ELKStack1/
 nav_order: 3
 date: 2024-12-07
 last_modified_date: 2024-12-07
